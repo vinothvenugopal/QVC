@@ -11,7 +11,7 @@ public class TC_006_ModifyDetails extends ProjectSpecificMethods {
 	@BeforeTest
 	public void setExcelValues()
 	{
-		workbookName = "ModifyDetails.xlsx";
+		workbookName = "ModifyPrimaryDetails.xlsx";
 		worksheetName = "India";
 	}
 	@Test(dataProvider = "getVisaDetails")
@@ -23,6 +23,7 @@ public class TC_006_ModifyDetails extends ProjectSpecificMethods {
 		.clickCountryDropDown()
 		.clickCountry()
 		.clickManageAppointmentLink()
+		.clickModifyButton()
 		.enterPassPortNumber(passPortNumber)
 		.enterVisaNumber(visaNumber)
 		.enterCaptcha()

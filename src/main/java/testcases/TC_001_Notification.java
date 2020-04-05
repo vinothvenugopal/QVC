@@ -6,6 +6,9 @@ import common.ProjectSpecificMethods;
 import pages.NotificationPage;
 
 public class TC_001_Notification extends ProjectSpecificMethods {
+	
+	
+	
 	@Test
 	public void clickNotification()
 	{

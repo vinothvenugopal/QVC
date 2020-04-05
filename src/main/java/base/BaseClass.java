@@ -6,6 +6,7 @@ import java.util.Arrays;
 import javax.xml.xpath.XPath;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.ElementNotSelectableException;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -29,7 +30,7 @@ public class BaseClass {
 			wait = new WebDriverWait(driver, 30);
 			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			ele.click();
-		} catch (NoSuchElementException e) {
+		} catch (Exception e) {
 			System.out.println("Element not found");
 		}
 	}
@@ -82,7 +83,7 @@ public class BaseClass {
 		ele.sendKeys(text);
 	}
 	//selecting month and date using the date mentioned in the data excel
-	public void selectDate(String date)
+	public void selectDate(String date) throws ElementNotInteractableException
 	{
 		try {
 			//keeping all month names in an array
@@ -111,7 +112,14 @@ public class BaseClass {
 						.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
 				wait = new WebDriverWait(driver, 30);
 				wait.until(ExpectedConditions.elementToBeClickable(eleDate));
-				eleDate.click();
+				if(eleDate.isEnabled()==true)
+				{
+					eleDate.click();
+				}
+				else
+				{
+					System.out.println("Requested date is not available to schedule");
+				}
 			} 
 			//if month in the UI is greater than the month mentioned in the Excel - click previous month button
 			else if (indexOfUIMonth > indexOfExcelMonth) {
@@ -127,7 +135,14 @@ public class BaseClass {
 						.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
 				wait = new WebDriverWait(driver, 30);
 				wait.until(ExpectedConditions.elementToBeClickable(eleDate));
-				eleDate.click();
+				if(eleDate.isEnabled() == true)
+				{
+					eleDate.click();
+				}
+				else
+				{
+					System.out.println("Requested date is not available to schedule");
+				}
 			} 
 			//if month in the UI and month mentioned in the Excel are equal - click the date directly
 			else if (indexOfUIMonth == indexOfExcelMonth) {
@@ -135,7 +150,14 @@ public class BaseClass {
 				WebElement eleDate = driver.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
 				wait = new WebDriverWait(driver, 30);
 				wait.until(ExpectedConditions.elementToBeClickable(eleDate));
-				eleDate.click();
+				if(eleDate.isEnabled() == true)
+				{
+					eleDate.click();
+				}
+				else
+				{
+					System.out.println("Requested date is not available to schedule");
+				}
 			} 
 		} catch (ElementNotSelectableException e) {
 			System.out.println("Given date is not enabled to be selected. Choose a different date");
@@ -145,7 +167,7 @@ public class BaseClass {
 			System.out.println("Element not present");
 		}
 		catch (Exception e) {
-			System.out.println("Unknown Exception");
+			System.out.println("Could not select the particular date");
 		}
 	}
 	//UI value verification

@@ -10,6 +10,32 @@ public class ModifyPrimaryContactPage extends BaseClass{
 		this.driver = driver;
 	}
 	
+	public ModifyPrimaryContactPage enterPassPortNumber(String passPortNumber)
+	{
+		WebElement ele = locateElement("name", "passportNumber");
+		clearAndEnter(ele, passPortNumber);
+		return this;
+	}
+	public ModifyPrimaryContactPage enterVisaNumber(String visaNumber)
+	{
+		WebElement ele = locateElement("name", "visaNumber");
+		clearAndEnter(ele, visaNumber);
+		return this;
+	}
+	public ModifyPrimaryContactPage enterCaptcha() throws InterruptedException
+	{
+		WebElement ele = locateElement("name", "captcha");
+		click(ele);
+		Thread.sleep(6000);
+		return this;
+	}
+	public ModifyPrimaryContactPage clickSubmitButton()
+	{
+		WebElement ele = locateElement("xpath", "//button[text()[normalize-space()='Submit']]");
+		click(ele);
+		return this;
+	}
+	
 	public ModifyPrimaryContactPage enterSponsorMobileNumber(String mobileNumber) throws InterruptedException
 	{
 		//Thread.sleep(1000);
@@ -47,6 +73,7 @@ public class ModifyPrimaryContactPage extends BaseClass{
 	public ManageAppointmentPage verifyAlertMessage()
 	{
 		WebElement ele = locateElement("xpath", "//div[@class='col-md-12']//modal-content");
+		WebElement ele1 = locateElement("xpath", "//button[text()='OK']");
 		boolean trueFalse = verifyUIValue("Updated Successfully...", ele);
 		if(trueFalse == true)
 		{
@@ -56,6 +83,7 @@ public class ModifyPrimaryContactPage extends BaseClass{
 		{
 			System.out.println("Could not update the modifications");
 		}
+		click(ele1);
 		return new ManageAppointmentPage(driver);
 	}
-}
+}   

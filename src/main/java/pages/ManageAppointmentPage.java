@@ -10,18 +10,18 @@ public class ManageAppointmentPage extends BaseClass {
 		this.driver = driver;
 	}
 	
-	public ManageAppointmentPage clickModifyButton()
+	public ModifyPrimaryContactPage clickModifyButton()
 	{
 		WebElement ele = locateElement("xpath", "//button[text()='Modify']");
 		click(ele);
-		return this;
+		return new ModifyPrimaryContactPage(driver);
 	}
 	
-	public ManageAppointmentPage clickRescheduleButton()
+	public ModifySchedulePage clickRescheduleButton()
 	{
 		WebElement ele = locateElement("xpath", "//button[text()='Reschedule']");
 		click(ele);
-		return this;
+		return new ModifySchedulePage(driver);
 	}
 	public ManageAppointmentPage clickWaitListButton()
 	{
@@ -29,36 +29,10 @@ public class ManageAppointmentPage extends BaseClass {
 		click(ele);
 		return this;
 	}
-	public ManageAppointmentPage clickReprintButton()
+	public ReprintPage clickReprintButton()
 	{
 		WebElement ele = locateElement("xpath", "//button[text()='Reprint']");
 		click(ele);
-		return this;
+		return new ReprintPage(driver);
 	}
-	public ManageAppointmentPage enterPassPortNumber(String passPortNumber)
-	{
-		WebElement ele = locateElement("name", "passportNumber");
-		clearAndEnter(ele, passPortNumber);
-		return this;
-	}
-	public ManageAppointmentPage enterVisaNumber(String visaNumber)
-	{
-		WebElement ele = locateElement("name", "visaNumber");
-		clearAndEnter(ele, visaNumber);
-		return this;
-	}
-	public ManageAppointmentPage enterCaptcha() throws InterruptedException
-	{
-		WebElement ele = locateElement("name", "captcha");
-		click(ele);
-		Thread.sleep(5000);
-		return this;
-	}
-	public ModifyPrimaryContactPage clickSubmitButton()
-	{
-		WebElement ele = locateElement("xpath", "//button[text()[normalize-space()='Submit']]");
-		click(ele);
-		return new ModifyPrimaryContactPage(driver);
-	}
-	
 }
