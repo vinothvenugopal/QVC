@@ -11,13 +11,18 @@ public class TC_008_Reprint extends ProjectSpecificMethods{
 	@BeforeTest
 	public void setExcelValue()
 	{
+		testCaseName = "Reprint";
+		testDescription = "Appointment letter Re-print flow";
+		nodes = "QVC";
+		authors = "Vinoth";
+		category = "Smoke";
 		workbookName = "ReprintData.xlsx";
 		worksheetName = "India";
 	}
 	@Test(dataProvider = "getVisaDetails")
 	public void reprintMethod(String passPortNumber, String visaNumber) throws InterruptedException
 	{
-		new LandingPage(driver)
+		new LandingPage(driver,node,test)
 		.clickLanguageDropDown()
 		.clickLanguage()
 		.clickCountryDropDown()

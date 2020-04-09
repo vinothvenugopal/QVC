@@ -3,12 +3,16 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import base.BaseClass;
 
 public class OrderSummaryPage extends BaseClass {
 
-	public OrderSummaryPage(RemoteWebDriver driver) {
+	public OrderSummaryPage(RemoteWebDriver driver,ExtentTest node, ExtentTest test) {
 		this.driver = driver;
+		this.node = node;
+		this.test = test;
 	}
 	public OrderSummaryPage verifyVisaCenter(String center) throws InterruptedException
 	{
@@ -64,6 +68,6 @@ public class OrderSummaryPage extends BaseClass {
 		WebElement ele = locateElement("xpath", "//button[text()='Confirm']");
 		//WebElement ele = driver.findElementByXPath("//button[text()='Confirm']");
 		click(ele);
-		return new AppointmentDetailsPage(driver);
+		return new AppointmentDetailsPage(driver,node,test);
 	}
 }

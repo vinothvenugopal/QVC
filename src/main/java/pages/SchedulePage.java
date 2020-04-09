@@ -8,12 +8,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import base.BaseClass;
 
 public class SchedulePage extends BaseClass {
 
-	public SchedulePage(RemoteWebDriver driver) {
+	public SchedulePage(RemoteWebDriver driver,ExtentTest node, ExtentTest test) {
 		this.driver = driver;
+		this.node = node;
+		this.test = test;
 	}
 	
 	public SchedulePage selectQVCCenter(String city) throws InterruptedException
@@ -62,6 +66,6 @@ public class SchedulePage extends BaseClass {
 		WebElement ele = locateElement("xpath", "//button[text()='Next']");
 	//	WebElement ele = driver.findElementByXPath("//button[text()='Next']");
 		click(ele);
-		return new OrderSummaryPage(driver);
+		return new OrderSummaryPage(driver,node,test);
 	}
 }

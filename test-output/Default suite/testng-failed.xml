@@ -3,13 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC_002_Notification">
+      <class name="testcases.TC_005_NormalAppointmentFlow">
         <methods>
-          <include name="clickNotification"/>
+          <include name="stopReport"/>
+          <include name="setUpClass"/>
+          <include name="report"/>
+          <include name="startReport"/>
+          <include name="normalAppointmentFlow"/>
+          <include name="setExcelValues"/>
           <include name="initiateBrowser"/>
           <include name="closeBrowser"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- testcases.TC_002_Notification -->
+      </class> <!-- testcases.TC_005_NormalAppointmentFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

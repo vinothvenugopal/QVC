@@ -3,12 +3,16 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import base.BaseClass;
 
 public class PrimaryContactPage extends BaseClass {
 
-	public PrimaryContactPage(RemoteWebDriver driver) {
+	public PrimaryContactPage(RemoteWebDriver driver,ExtentTest node, ExtentTest test) {
 		this.driver = driver;
+		this.node = node;
+		this.test = test;
 	}
 	
 	public PrimaryContactPage enterSponsorMobileNumber(String mobileNumber) throws InterruptedException
@@ -44,6 +48,6 @@ public class PrimaryContactPage extends BaseClass {
 		WebElement ele = locateElement("xpath", "//button[text()='I confirm that the details above are accurate and I am the primary applicant']");
 		//WebElement ele = driver.findElementByXPath("//button[text()='I confirm that the details above are accurate and I am the primary applicant']");
 		click(ele);
-		return new SchedulePage(driver);
+		return new SchedulePage(driver,node,test);
 	}
 }

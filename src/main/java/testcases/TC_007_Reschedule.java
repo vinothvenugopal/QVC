@@ -11,6 +11,11 @@ public class TC_007_Reschedule extends ProjectSpecificMethods{
 	@BeforeTest
 	public void setExcelValue()
 	{
+		testCaseName = "Reschedule";
+		testDescription = "Apointment reschedule flow";
+		nodes = "QVC";
+		authors = "Vinoth";
+		category = "Smoke";
 		workbookName = "ModifySchedule.xlsx";
 		worksheetName = "India";
 	}
@@ -18,7 +23,8 @@ public class TC_007_Reschedule extends ProjectSpecificMethods{
 	@Test(dataProvider = "getVisaDetails")
 	public void rescheduleMethod(String passPortNumber, String visaNumber, String center, String Date, String time) throws InterruptedException
 	{
-		new LandingPage(driver)
+		new LandingPage(driver,node,test)
+		.checkLandingNotification()
 		.clickLanguageDropDown()
 		.clickLanguage()
 		.clickCountryDropDown()

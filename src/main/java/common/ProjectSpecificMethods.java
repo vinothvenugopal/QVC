@@ -18,13 +18,14 @@ public class ProjectSpecificMethods extends BaseClass{
 	public RemoteWebDriver initiateBrowser(String url) 
 	{
 		driver = startApp("chrome", url);
+		node = test.createNode(testCaseName);
 		return driver;
 	}
 
 	@AfterMethod
 	public void closeBrowser()
 	{
-		//closeApp();
+		closeApp();
 	}
 	
 	@DataProvider(name = "getVisaDetails")

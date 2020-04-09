@@ -3,13 +3,17 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import base.BaseClass;
 
 public class ModifyPrimaryContactPage extends BaseClass{
-	public ModifyPrimaryContactPage(RemoteWebDriver driver) {
+	public ModifyPrimaryContactPage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
 		this.driver = driver;
+		this.node = node;
+		this.test = test;
 	}
-	
+
 	public ModifyPrimaryContactPage enterPassPortNumber(String passPortNumber)
 	{
 		WebElement ele = locateElement("name", "passportNumber");
@@ -33,9 +37,25 @@ public class ModifyPrimaryContactPage extends BaseClass{
 	{
 		WebElement ele = locateElement("xpath", "//button[text()[normalize-space()='Submit']]");
 		click(ele);
+
+		boolean isNotificationPresent = checkNotification("xpath", "//div[@class='pull-left appt']//button");
+		if(isNotificationPresent == true)
+		{
+			WebElement eleNotificationText = locateElement("xpath", "(//div[@class='col-md-12']//modal-content)[1]");
+			String notificationText = fetchText(eleNotificationText);
+			System.out.println("Message "+notificationText+" is displayed. /n Cannot proceed further with appointment with this data");
+			reportStep(notificationText, "fail");
+			WebElement ele1 = locateElement("xpath", "//div[@class='pull-left appt']//button");
+			click(ele1);
+			throw new RuntimeException();
+		}
+		else
+			reportStep("Submit button clicked successfully", "pass");
 		return this;
 	}
-	
+
+
+
 	public ModifyPrimaryContactPage enterSponsorMobileNumber(String mobileNumber) throws InterruptedException
 	{
 		//Thread.sleep(1000);
@@ -84,6 +104,6 @@ public class ModifyPrimaryContactPage extends BaseClass{
 			System.out.println("Could not update the modifications");
 		}
 		click(ele1);
-		return new ManageAppointmentPage(driver);
+		return new ManageAppointmentPage(driver,node,test);
 	}
 }   

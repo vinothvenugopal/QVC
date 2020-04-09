@@ -11,13 +11,19 @@ public class TC_006_ModifyDetails extends ProjectSpecificMethods {
 	@BeforeTest
 	public void setExcelValues()
 	{
+		testCaseName = "Modify Details";
+		testDescription = "Modify Contact Details flow";
+		nodes = "QVC";
+		authors = "Vinoth";
+		category = "Smoke";
 		workbookName = "ModifyPrimaryDetails.xlsx";
 		worksheetName = "India";
 	}
 	@Test(dataProvider = "getVisaDetails")
 	public void modifyDetailsMethod(String passPortNumber, String visaNumber, String sponsorPhNumber, String sponsorEmailID,String applicantEmailId,String applicantPhNo) throws InterruptedException
 	{
-		new LandingPage(driver)
+		new LandingPage(driver,node,test)
+		.checkLandingNotification()
 		.clickLanguageDropDown()
 		.clickLanguage()
 		.clickCountryDropDown()

@@ -1,13 +1,18 @@
 package pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import com.aventstack.extentreports.ExtentTest;
 
 import base.BaseClass;
 
 public class ApplicantDetailsPage extends BaseClass {
-	public ApplicantDetailsPage(RemoteWebDriver driver) {
+	public ApplicantDetailsPage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
 		this.driver = driver;
+		this.node = node;
+		this.test = test;
 	}
 
 	public ApplicantDetailsPage clickHide()
@@ -55,7 +60,20 @@ public class ApplicantDetailsPage extends BaseClass {
 		WebElement ele = locateElement("xpath", "//button[text()='Submit']");
 		//WebElement ele = driver.findElementByXPath("//button[text()='Submit']");
 		click(ele);
-		//Thread.sleep(500);
-		return new PrimaryContactPage(driver);
+		boolean isNotificationPresent = checkNotification("xpath", "//div[@class='pull-left appt']//button");
+		if(isNotificationPresent == true)
+		{
+			WebElement eleNotificationText = locateElement("xpath", "(//div[@class='col-md-12']//modal-content)[1]");
+			String notificationText = fetchText(eleNotificationText);
+			System.out.println("Message "+notificationText+" is displayed. /n Cannot proceed further with appointment with this data");
+			reportStep(notificationText, "fail");
+			WebElement ele1 = locateElement("xpath", "//div[@class='pull-left appt']//button");
+			click(ele1);
+			throw new RuntimeException();
+		}
+		else
+			reportStep("Submit button clicked successfully", "pass");
+		return new PrimaryContactPage(driver, node, test);
 	}
+	
 }

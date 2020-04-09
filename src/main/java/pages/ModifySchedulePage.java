@@ -3,12 +3,16 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import base.BaseClass;
 
 public class ModifySchedulePage extends BaseClass {
 
-	public ModifySchedulePage(RemoteWebDriver driver) {
+	public ModifySchedulePage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
 		this.driver = driver;
+		this.node = node;
+		this.test = test;
 	}
 	
 	public ModifySchedulePage enterPassPortNumber(String passPortNumber)
@@ -34,6 +38,20 @@ public class ModifySchedulePage extends BaseClass {
 	{
 		WebElement ele = locateElement("xpath", "//button[text()[normalize-space()='Submit']]");
 		click(ele);
+		boolean isNotificationPresent = checkNotification("xpath", "//div[@class='pull-left appt']//button");
+		if(isNotificationPresent == true)
+		{
+			WebElement eleNotificationText = locateElement("xpath", "(//div[@class='col-md-12']//modal-content)[1]");
+			String notificationText = fetchText(eleNotificationText);
+			System.out.println("Message "+notificationText+" is displayed. /n Cannot proceed further with Re-Scheduling with this data");
+			reportStep(notificationText, "fail");
+			WebElement ele1 = locateElement("xpath", "//div[@class='pull-left appt']//button");
+			click(ele1);
+			throw new RuntimeException();
+		}
+		else
+			reportStep("Submit button clicked successfully", "pass");
+		//return new PrimaryContactPage(driver, node, test);
 		return this;
 	}
 	
@@ -76,7 +94,7 @@ public class ModifySchedulePage extends BaseClass {
 	{
 		WebElement ele = locateElement("xpath", "//button[text()='Next']");
 		click(ele);
-		return new OrderSummaryPage(driver);
+		return new OrderSummaryPage(driver,node,test);
 	}
 	
 }

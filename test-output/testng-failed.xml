@@ -6,10 +6,15 @@
     <classes>
       <class name="testcases.TC_006_ModifyDetails">
         <methods>
+          <include name="stopReport"/>
+          <include name="setUpClass"/>
+          <include name="report"/>
+          <include name="startReport"/>
           <include name="setExcelValues"/>
           <include name="initiateBrowser"/>
           <include name="closeBrowser"/>
-          <include name="modifyDetailsMethod"/>
+          <include name="modifyDetailsMethod" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18"/>
+          <include name="tearDownClass"/>
         </methods>
       </class> <!-- testcases.TC_006_ModifyDetails -->
     </classes>
