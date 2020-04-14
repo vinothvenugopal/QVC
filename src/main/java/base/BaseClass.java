@@ -330,6 +330,108 @@ public class BaseClass extends Reporter {
 		String elementText = ele.getText();
 		return elementText;
 	}
+	
+	//selecting month and date using the date mentioned in the data excel
+	public void pickWaitListDate(String date) throws ElementNotInteractableException
+	{
+		try {
+			//keeping all month names in an array
+			String[] month = new String[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
+					"Aug", "Sep", "Oct", "Nov", "Dec" };
+			//finding the index of the array for the month specified in excel sheet
+			WebElement datePicker = locateElement("xpath", "//button[@class='btn cal-btn pull-right']//i");
+			click(datePicker);
+			String monthFromExcel = date.substring(3, 6);
+			int dateFromExcel = Integer.parseInt(date.substring(0, 2));
+			int indexOfExcelMonth = Arrays.asList(month).indexOf(monthFromExcel);
+			//getting the month name displayed in the UI date picker
+			String pickerMonth = driver.findElementByXPath("//div[@class='headermonthtxt']").getText();
+			//finding the index of the array for the month displayed in the UI
+			int indexOfUIMonth = Arrays.asList(month).indexOf(pickerMonth);
+			//if month in the UI is less than the month mentioned in the Excel - click next month button
+			if (indexOfUIMonth < indexOfExcelMonth) {
+				
+				System.out.println("Wait List can be scheduled only for the month "+pickerMonth+" Date requested falls on "+monthFromExcel+" month.");
+				throw new Exception("Test case failed");
+				/*
+				 * int difference = indexOfExcelMonth - indexOfUIMonth; WebElement ele =
+				 * driver.findElementByXPath("(//div[@class='headerbtncell'])[2]"); for (int i =
+				 * 0; i < difference; i++) { wait = new WebDriverWait(driver, 30);
+				 * wait.until(ExpectedConditions.elementToBeClickable(ele)); click(ele); }
+				 * Thread.sleep(1000); WebElement eleDate = driver
+				 * .findElementByXPath("//td[@class='daycell currmonth tablesingleday']//span[text()='"
+				 * + dateFromExcel + "']]"); wait = new WebDriverWait(driver, 30);
+				 * wait.until(ExpectedConditions.elementToBeClickable(eleDate));
+				 * if(eleDate.isEnabled()==true) { eleDate.click();
+				 * System.out.println("Date Selected successfully");
+				 * reportStep("Date selected successfully", "pass"); } else {
+				 * System.out.println("Requested date is not available to schedule");
+				 * reportStep("Requested date could not be selected", "fail"); }
+				 */
+			} 
+			//if month in the UI is greater than the month mentioned in the Excel - click previous month button
+			else if (indexOfUIMonth > indexOfExcelMonth) {
+				
+				System.out.println("Wait List can be scheduled only for the month "+pickerMonth+" Date requested falls on "+monthFromExcel+" month.");
+				throw new Exception("Test Case Failed");
+				/*
+				 * int difference = indexOfUIMonth - indexOfExcelMonth; WebElement ele =
+				 * driver.findElementByXPath("(//div[@class='headerbtncell'])[1]"); for (int i =
+				 * 0; i < difference; i++) { wait = new WebDriverWait(driver, 30);
+				 * wait.until(ExpectedConditions.elementToBeClickable(ele)); click(ele); }
+				 * Thread.sleep(1000); WebElement eleDate = driver
+				 * .findElementByXPath("//td[@class='daycell currmonth tablesingleday']//span[text()='"
+				 * + dateFromExcel + "']]"); wait = new WebDriverWait(driver, 30);
+				 * wait.until(ExpectedConditions.elementToBeClickable(eleDate));
+				 * if(eleDate.isEnabled() == true) { eleDate.click();
+				 * System.out.println("Date Selected successfully");
+				 * reportStep("Date selected successfully", "pass"); } else {
+				 * System.out.println("Requested date is not available to schedule");
+				 * reportStep("Requested date could not be selected", "fail"); }
+				 */
+			} 
+			//if month in the UI and month mentioned in the Excel are equal - click the date directly
+			else if (indexOfUIMonth == indexOfExcelMonth) {
+				Thread.sleep(1000);
+				String xpth = "//table[@class='caltable']//tr//span[text()='" + dateFromExcel + "']";
+				WebElement eleDate = driver.findElementByXPath("//table[@class='caltable']//tr//span[text()='" + dateFromExcel + "']");
+				String bgColor = eleDate.getCssValue("background-color");
+				/*System.out.println(bgColor);
+				String enabledColor = driver.findElementByXPath("//table[@class='caltable']//tr//span[text()='14']").getCssValue("color");
+				System.out.println(enabledColor);*/
+
+				
+				
+				  wait = new WebDriverWait(driver, 30);
+				  wait.until(ExpectedConditions.elementToBeClickable(eleDate)); 
+
+				if(bgColor.equals("rgba(0, 0, 0, 0)"))
+				{
+					eleDate.click();
+					System.out.println("Date Selected successfully");
+					reportStep("Date selected successfully", "pass");
+				}
+				else
+				{
+					System.out.println("Requested date is not available to schedule");
+					reportStep("Requested date could not be selected", "fail");
+					throw new Exception();
+				}
+			} 
+		} catch (ElementNotSelectableException e) {
+			System.out.println("Given date is not enabled to be selected. Choose a different date");
+		}
+		
+		  catch(NoSuchElementException e) { 
+			  System.out.println("Element not present");
+		  }
+		 
+		catch (Exception e) {
+			System.out.println("Could not select the particular date");
+			reportStep("Requested date could not be selected", "fail");
+		}
+		
+	}
 }
 
 

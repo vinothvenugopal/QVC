@@ -27,11 +27,11 @@ public class ManageAppointmentPage extends BaseClass {
 		click(ele);
 		return new ModifySchedulePage(driver,node,test);
 	}
-	public ManageAppointmentPage clickWaitListButton()
+	public WaitListPage clickWaitListButton()
 	{
 		WebElement ele = locateElement("xpath", "//button[text()='Waitlist']");
 		click(ele);
-		return this;
+		return new WaitListPage(driver, node, test);
 	}
 	public ReprintPage clickReprintButton()
 	{

@@ -4,7 +4,7 @@
 <parameter name="url" value="https://beta.qatarvisacenter.com/"></parameter>
   <test thread-count="5" name="Reprint">
     <classes>
-      <class name="testcases.TC_008_Reprint"/>
+      <class name="testcases.TC_009_Reprint"/>
     </classes>
   </test> <!-- Reprint -->
 </suite> <!-- QVC -->
