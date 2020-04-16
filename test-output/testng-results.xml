@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="8" total="13" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="QVC" duration-ms="358933" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:21:55 IST">
+  <suite name="QVC" duration-ms="256489" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T20:00:26 IST">
     <groups>
     </groups>
-    <test name="NormalAppointmentFlow" duration-ms="358933" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:21:55 IST">
+    <test name="NormalAppointmentFlow" duration-ms="256489" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T20:00:26 IST">
       <class name="testcases.TC_008_WaitList">
-        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="setExcelValue" is-config="true" duration-ms="0" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="setExcelValue" is-config="true" duration-ms="1" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExcelValue -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="report" is-config="true" duration-ms="3" started-at="2020-04-16T17:19:18 IST" finished-at="2020-04-16T17:19:18 IST">
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="report" is-config="true" duration-ms="0" started-at="2020-04-16T19:59:00 IST" finished-at="2020-04-16T19:59:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="initiateBrowser" is-config="true" duration-ms="21276" started-at="2020-04-16T17:19:19 IST" finished-at="2020-04-16T17:19:40 IST">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="initiateBrowser" is-config="true" duration-ms="12904" started-at="2020-04-16T19:59:00 IST" finished-at="2020-04-16T19:59:13 IST">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="waitListMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="waitListMethod" duration-ms="54868" started-at="2020-04-16T17:19:40 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:20:35 IST">
+        <test-method status="PASS" signature="waitListMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="waitListMethod" duration-ms="29271" started-at="2020-04-16T19:59:13 IST" data-provider="getVisaDetails" finished-at="2020-04-16T19:59:42 IST">
           <params>
             <param index="0">
               <value>
@@ -57,21 +57,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- waitListMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-04-16T17:20:35 IST" finished-at="2020-04-16T17:20:35 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="closeBrowser" is-config="true" duration-ms="4152" started-at="2020-04-16T19:59:42 IST" finished-at="2020-04-16T19:59:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.TC_008_WaitList -->
       <class name="testcases.TC_009_RePrint">
-        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="setExcelValue" is-config="true" duration-ms="0" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="setExcelValue" is-config="true" duration-ms="1" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExcelValue -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="report" is-config="true" duration-ms="0" started-at="2020-04-16T17:20:35 IST" finished-at="2020-04-16T17:20:35 IST">
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="report" is-config="true" duration-ms="1" started-at="2020-04-16T19:59:46 IST" finished-at="2020-04-16T19:59:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="initiateBrowser" is-config="true" duration-ms="32180" started-at="2020-04-16T17:20:35 IST" finished-at="2020-04-16T17:21:07 IST">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="initiateBrowser" is-config="true" duration-ms="13122" started-at="2020-04-16T19:59:46 IST" finished-at="2020-04-16T19:59:59 IST">
           <params>
             <param index="0">
               <value>
@@ -82,7 +82,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="reprintMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="reprintMethod" duration-ms="47853" started-at="2020-04-16T17:21:07 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:21:55 IST">
+        <test-method status="PASS" signature="reprintMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="reprintMethod" duration-ms="22263" started-at="2020-04-16T19:59:59 IST" data-provider="getVisaDetails" finished-at="2020-04-16T20:00:22 IST">
           <params>
             <param index="0">
               <value>
@@ -108,25 +108,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reprintMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-04-16T17:21:55 IST" finished-at="2020-04-16T17:21:55 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="closeBrowser" is-config="true" duration-ms="4135" started-at="2020-04-16T20:00:22 IST" finished-at="2020-04-16T20:00:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.TC_009_RePrint -->
       <class name="testcases.TC_005_NormalAppointmentFlow">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="startReport" is-config="true" duration-ms="1111" started-at="2020-04-16T17:15:55 IST" finished-at="2020-04-16T17:15:56 IST">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="startReport" is-config="true" duration-ms="222" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="setExcelValues" is-config="true" duration-ms="1" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="setExcelValues" is-config="true" duration-ms="1" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExcelValues -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="report" is-config="true" duration-ms="12" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="report" is-config="true" duration-ms="25" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="initiateBrowser" is-config="true" duration-ms="19062" started-at="2020-04-16T17:15:59 IST" finished-at="2020-04-16T17:16:18 IST">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="initiateBrowser" is-config="true" duration-ms="20475" started-at="2020-04-16T19:56:11 IST" finished-at="2020-04-16T19:56:31 IST">
           <params>
             <param index="0">
               <value>
@@ -137,7 +137,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="normalAppointmentFlow(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="normalAppointmentFlow" duration-ms="30355" started-at="2020-04-16T17:16:18 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:16:48 IST">
+        <test-method status="FAIL" signature="normalAppointmentFlow(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="normalAppointmentFlow" duration-ms="25512" started-at="2020-04-16T19:56:31 IST" data-provider="getVisaDetails" finished-at="2020-04-16T19:56:57 IST">
           <params>
             <param index="0">
               <value>
@@ -203,7 +203,7 @@
           <exception class="java.lang.RuntimeException">
             <full-stacktrace>
               <![CDATA[java.lang.RuntimeException
-at pages.ApplicantDetailsPage.clickSubmit(ApplicantDetailsPage.java:72)
+at pages.ApplicantDetailsPage.clickSubmit(ApplicantDetailsPage.java:73)
 at testcases.TC_005_NormalAppointmentFlow.normalAppointmentFlow(TC_005_NormalAppointmentFlow.java:42)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -239,25 +239,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- normalAppointmentFlow -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="closeBrowser" is-config="true" duration-ms="4" started-at="2020-04-16T17:16:48 IST" finished-at="2020-04-16T17:16:48 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="closeBrowser" is-config="true" duration-ms="4169" started-at="2020-04-16T19:56:57 IST" finished-at="2020-04-16T19:57:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="stopReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="stopReport" is-config="true" duration-ms="6939" started-at="2020-04-16T17:21:57 IST" finished-at="2020-04-16T17:22:04 IST">
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="stopReport" is-config="true" duration-ms="2340" started-at="2020-04-16T20:00:26 IST" finished-at="2020-04-16T20:00:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopReport -->
       </class> <!-- testcases.TC_005_NormalAppointmentFlow -->
       <class name="testcases.TC_007_Reschedule">
-        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="setExcelValue" is-config="true" duration-ms="1" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="setExcelValue" is-config="true" duration-ms="1" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExcelValue -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="report" is-config="true" duration-ms="1" started-at="2020-04-16T17:17:59 IST" finished-at="2020-04-16T17:17:59 IST">
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="report" is-config="true" duration-ms="0" started-at="2020-04-16T19:58:04 IST" finished-at="2020-04-16T19:58:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="initiateBrowser" is-config="true" duration-ms="19557" started-at="2020-04-16T17:17:59 IST" finished-at="2020-04-16T17:18:18 IST">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="initiateBrowser" is-config="true" duration-ms="18970" started-at="2020-04-16T19:58:04 IST" finished-at="2020-04-16T19:58:23 IST">
           <params>
             <param index="0">
               <value>
@@ -268,7 +268,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="rescheduleMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="rescheduleMethod" duration-ms="60013" started-at="2020-04-16T17:18:18 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:19:18 IST">
+        <test-method status="PASS" signature="rescheduleMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="rescheduleMethod" duration-ms="35869" started-at="2020-04-16T19:58:23 IST" data-provider="getVisaDetails" finished-at="2020-04-16T19:58:59 IST">
           <params>
             <param index="0">
               <value>
@@ -309,21 +309,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rescheduleMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-04-16T17:19:18 IST" finished-at="2020-04-16T17:19:18 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="closeBrowser" is-config="true" duration-ms="571" started-at="2020-04-16T19:58:59 IST" finished-at="2020-04-16T19:59:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.TC_007_Reschedule -->
       <class name="testcases.TC_006_ModifyDetails">
-        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="setExcelValues" is-config="true" duration-ms="0" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="setExcelValues" is-config="true" duration-ms="0" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExcelValues -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="report" is-config="true" duration-ms="1" started-at="2020-04-16T17:16:48 IST" finished-at="2020-04-16T17:16:48 IST">
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="report" is-config="true" duration-ms="1" started-at="2020-04-16T19:57:01 IST" finished-at="2020-04-16T19:57:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="initiateBrowser" is-config="true" duration-ms="19655" started-at="2020-04-16T17:16:48 IST" finished-at="2020-04-16T17:17:08 IST">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="initiateBrowser" is-config="true" duration-ms="27696" started-at="2020-04-16T19:57:02 IST" finished-at="2020-04-16T19:57:29 IST">
           <params>
             <param index="0">
               <value>
@@ -334,7 +334,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="modifyDetailsMethod" duration-ms="50764" started-at="2020-04-16T17:17:08 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:17:59 IST">
+        <test-method status="PASS" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="modifyDetailsMethod" duration-ms="30688" started-at="2020-04-16T19:57:29 IST" data-provider="getVisaDetails" finished-at="2020-04-16T19:58:00 IST">
           <params>
             <param index="0">
               <value>
@@ -380,7 +380,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-04-16T17:17:59 IST" finished-at="2020-04-16T17:17:59 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="closeBrowser" is-config="true" duration-ms="4147" started-at="2020-04-16T19:58:00 IST" finished-at="2020-04-16T19:58:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
