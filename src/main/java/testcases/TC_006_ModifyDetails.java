@@ -20,14 +20,14 @@ public class TC_006_ModifyDetails extends ProjectSpecificMethods {
 		worksheetName = "India";
 	}
 	@Test(dataProvider = "getVisaDetails")
-	public void modifyDetailsMethod(String passPortNumber, String visaNumber, String sponsorPhNumber, String sponsorEmailID,String applicantEmailId,String applicantPhNo) throws InterruptedException
+	public void modifyDetailsMethod(String lang, String ctry, String passPortNumber, String visaNumber, String sponsorPhNumber, String sponsorEmailID,String applicantEmailId,String applicantPhNo) throws InterruptedException
 	{
 		new LandingPage(driver,node,test)
 		.checkLandingNotification()
 		.clickLanguageDropDown()
-		.clickLanguage()
+		.clickLanguage(lang)
 		.clickCountryDropDown()
-		.clickCountry()
+		.clickCountry(ctry)
 		.clickManageAppointmentLink()
 		.clickModifyButton()
 		.enterPassPortNumber(passPortNumber)

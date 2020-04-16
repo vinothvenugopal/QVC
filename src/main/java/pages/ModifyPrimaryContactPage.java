@@ -33,7 +33,7 @@ public class ModifyPrimaryContactPage extends BaseClass{
 		Thread.sleep(6000);
 		return this;
 	}
-	public ModifyPrimaryContactPage clickSubmitButton()
+	public ModifyPrimaryContactPage clickSubmitButton() throws InterruptedException
 	{
 		WebElement ele = locateElement("xpath", "//button[text()[normalize-space()='Submit']]");
 		click(ele);

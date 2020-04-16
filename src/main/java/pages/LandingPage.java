@@ -15,7 +15,7 @@ public class LandingPage extends BaseClass{
 		this.test = test;
 	}
 
-	public LandingPage checkLandingNotification()
+	public LandingPage checkLandingNotification() throws InterruptedException
 	{
 		//WebElement ele = locateElement("xpath", "//button[text()='OK']");
 		boolean isNotificationDisplayed = checkNotification("xpath","//button[text()='OK']");
@@ -40,9 +40,9 @@ public class LandingPage extends BaseClass{
 			click(ele);
 			return this;
 	}
-	public LandingPage clickLanguage()
+	public LandingPage clickLanguage(String lang)
 	{
-		WebElement ele = locateElement("xpath", "//ul[@class='dropdown-menu']//a[text()='English']");
+		WebElement ele = locateElement("xpath", "//ul[@class='dropdown-menu']//a[text()='"+lang+"']");
 		//WebElement ele = driver.findElementByXPath("//ul[@class='dropdown-menu']//a[text()='English']");
 		click(ele);
 		return this;
@@ -54,9 +54,9 @@ public class LandingPage extends BaseClass{
 		click(ele);
 		return this;
 	}
-	public HomePage clickCountry()
+	public HomePage clickCountry(String ctry)
 	{
-		WebElement ele = locateElement("xpath", "((//ul[@class='dropdown-menu'])[2])//a[text()='India']");
+		WebElement ele = locateElement("xpath", "((//ul[@class='dropdown-menu'])[2])//a[text()='"+ctry+"']");
 		//WebElement ele = driver.findElementByXPath("((//ul[@class='dropdown-menu'])[2])//a[text()='India']");
 		click(ele);
 		return new HomePage(driver,node,test);

@@ -11,7 +11,7 @@ public class TC_008_WaitList extends ProjectSpecificMethods{
 	@BeforeTest
 	public void setExcelValue()
 	{
-		testCaseName = "Reprint";
+		testCaseName = "Waitlist";
 		testDescription = "WaitList flow";
 		nodes = "QVC";
 		authors = "Vinoth";
@@ -20,14 +20,14 @@ public class TC_008_WaitList extends ProjectSpecificMethods{
 		worksheetName = "India";
 	}
 	@Test(dataProvider = "getVisaDetails")
-	public void reprintMethod(String passPortNumber, String visaNumber, String waitListDate) throws InterruptedException
+	public void waitListMethod(String lang, String ctry, String passPortNumber, String visaNumber, String waitListDate) throws InterruptedException
 	{
 		new LandingPage(driver, node, test)
 		.checkLandingNotification()
 		.clickLanguageDropDown()
-		.clickLanguage()
+		.clickLanguage(lang)
 		.clickCountryDropDown()
-		.clickCountry()
+		.clickCountry(ctry)
 		.clickManageAppointmentLink()
 		.clickWaitListButton()
 		.enterPassportNumber(passPortNumber)

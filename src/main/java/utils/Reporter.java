@@ -1,5 +1,6 @@
 package utils;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.testng.annotations.AfterSuite;
@@ -15,17 +16,24 @@ import com.aventstack.extentreports.reporter.configuration.ExtentHtmlReporterCon
 
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-public abstract class Reporter extends AbstractTestNGCucumberTests{
+public abstract class Reporter {
 	
-	public static ExtentHtmlReporter reporter;
+	public  ExtentHtmlReporter reporter;
 	public static ExtentReports extent;
 	public ExtentTest test, node;
 	
 	public String testCaseName, testDescription, nodes, authors,category;
 	public String excelFileName;
+	public String workbookName;
+	public String worksheetName;
 	
 	@BeforeSuite
 	public void startReport() {
+		File f = new File("./reports");
+		if(!f.exists())
+		{
+			f.mkdir();
+		}
 		reporter = new ExtentHtmlReporter("./reports/result.html");
 		reporter.setAppendExisting(true); 
 		extent = new ExtentReports();
@@ -57,6 +65,7 @@ public abstract class Reporter extends AbstractTestNGCucumberTests{
     		node.pass(dec, img);
     	} else if(status.equalsIgnoreCase("fail")) {
     		node.fail(dec, img); 
+    	//	throw new RuntimeException("runtime exception from reporter");
     	}
     }
     

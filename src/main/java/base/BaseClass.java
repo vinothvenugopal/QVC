@@ -4,6 +4,7 @@ package base;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.List;
 
 import javax.xml.xpath.XPath;
 
@@ -28,8 +29,7 @@ import utils.Reporter;
 public class BaseClass extends Reporter {
 	public RemoteWebDriver driver;
 	public WebDriverWait wait;
-	public String workbookName;
-	public String worksheetName;
+	
 	// click action
 	public void click(WebElement ele)
 	{	
@@ -65,7 +65,7 @@ public class BaseClass extends Reporter {
 
 		} catch (Exception e) {
 			System.out.println("Issue in launching browser");
-			//reportStep("Could not launch Browser", "fail");
+			reportStep("Could not launch Browser", "fail");
 
 		}
 		return driver;
@@ -109,12 +109,15 @@ public class BaseClass extends Reporter {
 	public void selectDate(String date) throws ElementNotInteractableException
 	{
 		try {
+			WebElement eleDate;
 			//keeping all month names in an array
 			String[] month = new String[] { "January", "February", "March", "April", "May", "June", "July",
 					"August", "September", "October", "November", "December" };
 			//finding the index of the array for the month specified in excel sheet
 			String monthFromExcel = date.substring(3, (date.length()));
 			int dateFromExcel = Integer.parseInt(date.substring(0, 2));
+			List<WebElement> calendarDateList = driver
+					.findElementsByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
 			int indexOfExcelMonth = Arrays.asList(month).indexOf(monthFromExcel);
 			//getting the month name displayed in the UI date picker
 			String pickerMonth = driver.findElementByXPath("//div[@class='navigation__title']//span[1]")
@@ -131,8 +134,17 @@ public class BaseClass extends Reporter {
 					click(ele);
 				}
 				Thread.sleep(1000);
-				WebElement eleDate = driver
-						.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
+				if(calendarDateList.size()>1)
+				{
+					eleDate = driver
+							.findElementByXPath("(//button[text()[normalize-space()='" + dateFromExcel + "']])[2]");
+				}
+				else
+				{
+					eleDate = driver
+							.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
+				}
+				
 				wait = new WebDriverWait(driver, 30);
 				wait.until(ExpectedConditions.elementToBeClickable(eleDate));
 				if(eleDate.isEnabled()==true)
@@ -156,8 +168,16 @@ public class BaseClass extends Reporter {
 					click(ele);
 				}
 				Thread.sleep(1000);
-				WebElement eleDate = driver
-						.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
+				if(calendarDateList.size()>1)
+				{
+					eleDate = driver
+							.findElementByXPath("(//button[text()[normalize-space()='" + dateFromExcel + "']])[2]");
+				}
+				else
+				{
+					eleDate = driver
+							.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
+				}
 				wait = new WebDriverWait(driver, 30);
 				wait.until(ExpectedConditions.elementToBeClickable(eleDate));
 				if(eleDate.isEnabled() == true)
@@ -174,7 +194,16 @@ public class BaseClass extends Reporter {
 			//if month in the UI and month mentioned in the Excel are equal - click the date directly
 			else if (indexOfUIMonth == indexOfExcelMonth) {
 				Thread.sleep(1000);
-				WebElement eleDate = driver.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
+				if(calendarDateList.size()>1)
+				{
+					eleDate = driver
+							.findElementByXPath("(//button[text()[normalize-space()='" + dateFromExcel + "']])[2]");
+				}
+				else
+				{
+					eleDate = driver
+							.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
+				}
 				wait = new WebDriverWait(driver, 30);
 				wait.until(ExpectedConditions.elementToBeClickable(eleDate));
 				if(eleDate.isEnabled() == true)
@@ -246,8 +275,9 @@ public class BaseClass extends Reporter {
 	
 	//to check if there are any notifications
 
-	 public boolean checkNotification(String locator, String property) 
+	 public boolean checkNotification(String locator, String property) throws InterruptedException 
 	 {
+		 Thread.sleep(2000);
 		 boolean isNotificationPresent = driver.findElementsByXPath(property).size()>0;
 		 return isNotificationPresent;
 	 }
@@ -394,18 +424,27 @@ public class BaseClass extends Reporter {
 			else if (indexOfUIMonth == indexOfExcelMonth) {
 				Thread.sleep(1000);
 				String xpth = "//table[@class='caltable']//tr//span[text()='" + dateFromExcel + "']";
+				
+				//getting the background color of the particular date to check if the date is enabled or disabled
+				String dateBGCssValue = driver.findElementByXPath("//*[text()='"+dateFromExcel+"']/ancestor::td").getCssValue("background-color");
 				WebElement eleDate = driver.findElementByXPath("//table[@class='caltable']//tr//span[text()='" + dateFromExcel + "']");
-				String bgColor = eleDate.getCssValue("background-color");
+				/*
+				 * Actions action = new Actions(driver);
+				 * action.moveToElement(eleDate).build().perform();
+				 */
+				/*
+				 * String bgColor = eleDate.getCssValue("background-color");
+				 * System.out.println(bgColor);
+				 */
+
 				/*System.out.println(bgColor);
 				String enabledColor = driver.findElementByXPath("//table[@class='caltable']//tr//span[text()='14']").getCssValue("color");
 				System.out.println(enabledColor);*/
-
-				
 				
 				  wait = new WebDriverWait(driver, 30);
 				  wait.until(ExpectedConditions.elementToBeClickable(eleDate)); 
 
-				if(bgColor.equals("rgba(0, 0, 0, 0)"))
+				if(dateBGCssValue.equals("rgba(0, 0, 0, 0)"))
 				{
 					eleDate.click();
 					System.out.println("Date Selected successfully");

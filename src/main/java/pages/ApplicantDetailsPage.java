@@ -60,6 +60,7 @@ public class ApplicantDetailsPage extends BaseClass {
 		WebElement ele = locateElement("xpath", "//button[text()='Submit']");
 		//WebElement ele = driver.findElementByXPath("//button[text()='Submit']");
 		click(ele);
+		
 		boolean isNotificationPresent = checkNotification("xpath", "//div[@class='pull-left appt']//button");
 		if(isNotificationPresent == true)
 		{

@@ -35,7 +35,7 @@ public class WaitListPage extends BaseClass {
 		Thread.sleep(6000);
 		return this;
 	}
-	public AddWaitListPage clickSubmitButton()
+	public AddWaitListPage clickSubmitButton() throws InterruptedException
 	{
 		WebElement ele = locateElement("xpath", "//button[text()[normalize-space()='Submit']]");
 		click(ele);

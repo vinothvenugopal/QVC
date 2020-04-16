@@ -20,13 +20,14 @@ public class TC_009_RePrint extends ProjectSpecificMethods{
 		worksheetName = "India";
 	}
 	@Test(dataProvider = "getVisaDetails")
-	public void reprintMethod(String passPortNumber, String visaNumber) throws InterruptedException
+	public void reprintMethod(String lang, String ctry,String passPortNumber, String visaNumber) throws InterruptedException
 	{
 		new LandingPage(driver,node,test)
+		.checkLandingNotification()
 		.clickLanguageDropDown()
-		.clickLanguage()
+		.clickLanguage(lang)
 		.clickCountryDropDown()
-		.clickCountry()
+		.clickCountry(ctry)
 		.clickManageAppointmentLink()
 		.clickReprintButton()
 		.enterPassPortNumber(passPortNumber)

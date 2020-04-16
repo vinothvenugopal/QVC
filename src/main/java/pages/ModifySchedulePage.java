@@ -34,7 +34,7 @@ public class ModifySchedulePage extends BaseClass {
 		Thread.sleep(5000);
 		return this;
 	}
-	public ModifySchedulePage clickSubmitButton()
+	public ModifySchedulePage clickSubmitButton() throws InterruptedException
 	{
 		WebElement ele = locateElement("xpath", "//button[text()[normalize-space()='Submit']]");
 		click(ele);
@@ -57,7 +57,7 @@ public class ModifySchedulePage extends BaseClass {
 	
 	public ModifySchedulePage selectQVCCenter(String city) throws InterruptedException
 	{
-		WebElement ele = locateElement("xpath", "//span[@class='fa fa-chevron-down']");
+		WebElement ele = locateElement("xpath", "//button[contains(@class,'btn bk-btn')]");
 		click(ele);
 		WebElement ele1 = locateElement("xpath", "//ul[@class='dropdown-menu']//a[text()='"+city+"']");
 		click(ele1);

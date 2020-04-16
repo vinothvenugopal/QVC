@@ -1,32 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="19" ignored="0" total="19" passed="0">
+<testng-results skipped="0" failed="1" ignored="8" total="13" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="QVC" duration-ms="1073435" started-at="2020-04-09T19:10:53 IST" finished-at="2020-04-09T19:28:46 IST">
+  <suite name="QVC" duration-ms="358933" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:21:55 IST">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Modify" duration-ms="1073435" started-at="2020-04-09T19:10:53 IST" finished-at="2020-04-09T19:28:46 IST">
-      <class name="testcases.TC_006_ModifyDetails">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="startReport" is-config="true" duration-ms="1601" started-at="2020-04-09T19:10:51 IST" finished-at="2020-04-09T19:10:53 IST">
+    <test name="NormalAppointmentFlow" duration-ms="358933" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:21:55 IST">
+      <class name="testcases.TC_008_WaitList">
+        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="setExcelValue" is-config="true" duration-ms="0" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="setExcelValues" is-config="true" duration-ms="2" started-at="2020-04-09T19:10:53 IST" finished-at="2020-04-09T19:10:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExcelValues -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="setUpClass" is-config="true" duration-ms="319" started-at="2020-04-09T19:10:53 IST" finished-at="2020-04-09T19:10:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="report" is-config="true" duration-ms="15" started-at="2020-04-09T19:10:53 IST" finished-at="2020-04-09T19:10:53 IST">
+        </test-method> <!-- setExcelValue -->
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="report" is-config="true" duration-ms="3" started-at="2020-04-16T17:19:18 IST" finished-at="2020-04-16T17:19:18 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="19312" started-at="2020-04-09T19:10:54 IST" finished-at="2020-04-09T19:11:14 IST">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="initiateBrowser" is-config="true" duration-ms="21276" started-at="2020-04-16T17:19:19 IST" finished-at="2020-04-16T17:19:40 IST">
           <params>
             <param index="0">
               <value>
@@ -37,2006 +26,365 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="27403" started-at="2020-04-09T19:11:14 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:11:41 IST">
+        <test-method status="PASS" signature="waitListMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="waitListMethod" duration-ms="54868" started-at="2020-04-16T17:19:40 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:20:35 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TE2404201912]]>
+                <![CDATA[English]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[362019000177]]>
+                <![CDATA[Sri Lanka]]>
               </value>
             </param>
             <param index="2">
+              <value>
+                <![CDATA[AAA12345AA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[032018000116]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[17 April]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waitListMethod -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-04-16T17:20:35 IST" finished-at="2020-04-16T17:20:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC_008_WaitList -->
+      <class name="testcases.TC_009_RePrint">
+        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="setExcelValue" is-config="true" duration-ms="0" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExcelValue -->
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="report" is-config="true" duration-ms="0" started-at="2020-04-16T17:20:35 IST" finished-at="2020-04-16T17:20:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="initiateBrowser" is-config="true" duration-ms="32180" started-at="2020-04-16T17:20:35 IST" finished-at="2020-04-16T17:21:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://beta.qatarvisacenter.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="reprintMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="reprintMethod" duration-ms="47853" started-at="2020-04-16T17:21:07 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:21:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sri Lanka]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AAA12345AA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[032018000116]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reprintMethod -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-04-16T17:21:55 IST" finished-at="2020-04-16T17:21:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC_009_RePrint -->
+      <class name="testcases.TC_005_NormalAppointmentFlow">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="startReport" is-config="true" duration-ms="1111" started-at="2020-04-16T17:15:55 IST" finished-at="2020-04-16T17:15:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="setExcelValues" is-config="true" duration-ms="1" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExcelValues -->
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="report" is-config="true" duration-ms="12" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="initiateBrowser" is-config="true" duration-ms="19062" started-at="2020-04-16T17:15:59 IST" finished-at="2020-04-16T17:16:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://beta.qatarvisacenter.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="FAIL" signature="normalAppointmentFlow(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="normalAppointmentFlow" duration-ms="30355" started-at="2020-04-16T17:16:18 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:16:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sri Lanka]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AAA12345AA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[032018000116]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[009749595424]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Vinoth@yahoo.co.in.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[vinodhan@gmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[009465689865659]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Normal]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Colombo]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[30 April]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10:30]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException
+at pages.ApplicantDetailsPage.clickSubmit(ApplicantDetailsPage.java:72)
+at testcases.TC_005_NormalAppointmentFlow.normalAppointmentFlow(TC_005_NormalAppointmentFlow.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- normalAppointmentFlow -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="closeBrowser" is-config="true" duration-ms="4" started-at="2020-04-16T17:16:48 IST" finished-at="2020-04-16T17:16:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="stopReport" is-config="true" duration-ms="6939" started-at="2020-04-16T17:21:57 IST" finished-at="2020-04-16T17:22:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- testcases.TC_005_NormalAppointmentFlow -->
+      <class name="testcases.TC_007_Reschedule">
+        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="setExcelValue" is-config="true" duration-ms="1" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExcelValue -->
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="report" is-config="true" duration-ms="1" started-at="2020-04-16T17:17:59 IST" finished-at="2020-04-16T17:17:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="initiateBrowser" is-config="true" duration-ms="19557" started-at="2020-04-16T17:17:59 IST" finished-at="2020-04-16T17:18:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://beta.qatarvisacenter.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="rescheduleMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="rescheduleMethod" duration-ms="60013" started-at="2020-04-16T17:18:18 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:19:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sri Lanka]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AAA12345AA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[032018000116]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Colombo]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[20 April]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[16:15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rescheduleMethod -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-04-16T17:19:18 IST" finished-at="2020-04-16T17:19:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC_007_Reschedule -->
+      <class name="testcases.TC_006_ModifyDetails">
+        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="setExcelValues" is-config="true" duration-ms="0" started-at="2020-04-16T17:15:56 IST" finished-at="2020-04-16T17:15:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExcelValues -->
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="report" is-config="true" duration-ms="1" started-at="2020-04-16T17:16:48 IST" finished-at="2020-04-16T17:16:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="initiateBrowser" is-config="true" duration-ms="19655" started-at="2020-04-16T17:16:48 IST" finished-at="2020-04-16T17:17:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://beta.qatarvisacenter.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="modifyDetailsMethod" duration-ms="50764" started-at="2020-04-16T17:17:08 IST" data-provider="getVisaDetails" finished-at="2020-04-16T17:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[English]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sri Lanka]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[AAA12345AA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[032018000116]]>
+              </value>
+            </param>
+            <param index="4">
               <value>
                 <![CDATA[009741111111]]>
               </value>
             </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor1@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant1@applicant.com]]>
-              </value>
-            </param>
             <param index="5">
               <value>
-                <![CDATA[009101111111]]>
+                <![CDATA[spns@gmail.com]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[apllcnt@gmail.com]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[009465689865659]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at pages.ModifyPrimaryContactPage.clickSubmitButton(ModifyPrimaryContactPage.java:50)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="5025" started-at="2020-04-09T19:11:41 IST" finished-at="2020-04-09T19:11:46 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-04-16T17:17:59 IST" finished-at="2020-04-16T17:17:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="15011" started-at="2020-04-09T19:11:46 IST" finished-at="2020-04-09T19:12:01 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="44633" started-at="2020-04-09T19:12:01 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:12:46 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IND003]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[032019000031]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009742222222]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor2@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant2@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009102222222]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7069e15b5c4955b302b3a2b6cd8a4c2d
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="5302" started-at="2020-04-09T19:12:46 IST" finished-at="2020-04-09T19:12:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="15001" started-at="2020-04-09T19:12:51 IST" finished-at="2020-04-09T19:13:06 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="43064" started-at="2020-04-09T19:13:06 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:13:49 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IND006]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[032019000034]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009743333333]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor3@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant3@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009103333333]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63221}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 385f192a0abbb52a5685ca92dad8b2a1
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="4745" started-at="2020-04-09T19:13:49 IST" finished-at="2020-04-09T19:13:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="14661" started-at="2020-04-09T19:13:54 IST" finished-at="2020-04-09T19:14:09 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="24476" started-at="2020-04-09T19:14:09 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:14:33 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IND3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[032019000064]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009744444444]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor4@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant4@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009104444444]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at pages.ModifyPrimaryContactPage.clickSubmitButton(ModifyPrimaryContactPage.java:50)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="4614" started-at="2020-04-09T19:14:33 IST" finished-at="2020-04-09T19:14:38 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="15019" started-at="2020-04-09T19:14:38 IST" finished-at="2020-04-09T19:14:53 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="26055" started-at="2020-04-09T19:14:53 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:15:19 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[IND100]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[032019000070]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009745555555]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor5@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant5@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009105555555]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at pages.ModifyPrimaryContactPage.clickSubmitButton(ModifyPrimaryContactPage.java:50)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="1627" started-at="2020-04-09T19:15:19 IST" finished-at="2020-04-09T19:15:20 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="15096" started-at="2020-04-09T19:15:20 IST" finished-at="2020-04-09T19:15:36 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="25047" started-at="2020-04-09T19:15:36 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:16:01 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE08012020]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000009]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009746666666]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor6@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant6@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009106666666]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at pages.ModifyPrimaryContactPage.clickSubmitButton(ModifyPrimaryContactPage.java:50)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="5056" started-at="2020-04-09T19:16:01 IST" finished-at="2020-04-09T19:16:06 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="15759" started-at="2020-04-09T19:16:06 IST" finished-at="2020-04-09T19:16:21 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="44103" started-at="2020-04-09T19:16:21 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:17:06 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE080120201]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000010]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009747777777]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor7@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant7@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009107777777]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3894f3a7f8670a3db8a9a8e0f8b3d4a2
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="385" started-at="2020-04-09T19:17:06 IST" finished-at="2020-04-09T19:17:06 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="14074" started-at="2020-04-09T19:17:06 IST" finished-at="2020-04-09T19:17:20 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="25750" started-at="2020-04-09T19:17:20 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:17:46 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE2404201931]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362019000195]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009748888888]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor8@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant8@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009108888888]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at pages.ModifyPrimaryContactPage.clickSubmitButton(ModifyPrimaryContactPage.java:50)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="4895" started-at="2020-04-09T19:17:46 IST" finished-at="2020-04-09T19:17:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="14971" started-at="2020-04-09T19:17:51 IST" finished-at="2020-04-09T19:18:06 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="46702" started-at="2020-04-09T19:18:06 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:18:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE2404201933]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362019000197]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009749999999]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor9@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant9@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009109999999]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63664}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: cb946d60767f19af1972e46324bb6f41
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="775" started-at="2020-04-09T19:18:52 IST" finished-at="2020-04-09T19:18:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="19864" started-at="2020-04-09T19:18:53 IST" finished-at="2020-04-09T19:19:13 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="46825" started-at="2020-04-09T19:19:13 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:20:00 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE080120202]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000011]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009741211111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor10@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant10@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009101211111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63733}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9eee5dd39eeb4d5c95870051104cba57
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="4435" started-at="2020-04-09T19:20:00 IST" finished-at="2020-04-09T19:20:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="17964" started-at="2020-04-09T19:20:04 IST" finished-at="2020-04-09T19:20:22 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="46363" started-at="2020-04-09T19:20:22 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:21:09 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE080120203]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000012]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009741311111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor11@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant11@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009101311111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63832}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3ddf187b504f6de8e2609db9a2708966
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="1049" started-at="2020-04-09T19:21:09 IST" finished-at="2020-04-09T19:21:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="14958" started-at="2020-04-09T19:21:10 IST" finished-at="2020-04-09T19:21:25 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="24919" started-at="2020-04-09T19:21:25 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:21:49 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE080120204]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000013]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009741411111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor12@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant12@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009101411111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at pages.ModifyPrimaryContactPage.clickSubmitButton(ModifyPrimaryContactPage.java:50)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="1311" started-at="2020-04-09T19:21:49 IST" finished-at="2020-04-09T19:21:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="16038" started-at="2020-04-09T19:21:51 IST" finished-at="2020-04-09T19:22:07 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="45073" started-at="2020-04-09T19:22:07 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:22:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE080120205]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000014]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009741511111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor13@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant13@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009101511111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63967}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e566c43feaf22f306150e9896233c4d9
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="597" started-at="2020-04-09T19:22:52 IST" finished-at="2020-04-09T19:22:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="14191" started-at="2020-04-09T19:22:53 IST" finished-at="2020-04-09T19:23:07 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="46704" started-at="2020-04-09T19:23:07 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:23:53 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE080120206]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000015]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009741611111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor14@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant14@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009101611111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64039}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 26122ecd251668c90b7d1703a145d129
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="4467" started-at="2020-04-09T19:23:53 IST" finished-at="2020-04-09T19:23:58 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="14045" started-at="2020-04-09T19:23:58 IST" finished-at="2020-04-09T19:24:12 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="26351" started-at="2020-04-09T19:24:12 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:24:38 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE080120207]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000016]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009741711111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor15@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant15@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009101711111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at pages.ModifyPrimaryContactPage.clickSubmitButton(ModifyPrimaryContactPage.java:50)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="1755" started-at="2020-04-09T19:24:38 IST" finished-at="2020-04-09T19:24:40 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="15377" started-at="2020-04-09T19:24:40 IST" finished-at="2020-04-09T19:24:55 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="27708" started-at="2020-04-09T19:24:55 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:25:23 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE080120208]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000017]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009741811111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor16@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant16@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009101811111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at pages.ModifyPrimaryContactPage.clickSubmitButton(ModifyPrimaryContactPage.java:50)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:36)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="4832" started-at="2020-04-09T19:25:23 IST" finished-at="2020-04-09T19:25:28 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="14520" started-at="2020-04-09T19:25:28 IST" finished-at="2020-04-09T19:25:42 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="46285" started-at="2020-04-09T19:25:42 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:26:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE080120209]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000018]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009741911111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor17@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant17@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009101911111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64260}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 144ee1968a10765daec0d482a9cf8472
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="4116" started-at="2020-04-09T19:26:29 IST" finished-at="2020-04-09T19:26:33 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="15271" started-at="2020-04-09T19:26:33 IST" finished-at="2020-04-09T19:26:48 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="46062" started-at="2020-04-09T19:26:48 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:27:34 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE0801202011]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362020000020]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009741011111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor18@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant18@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009101011111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a90d23c7a4826875fca1077abe82f0ad
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="4170" started-at="2020-04-09T19:27:34 IST" finished-at="2020-04-09T19:27:38 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="initiateBrowser" is-config="true" duration-ms="16171" started-at="2020-04-09T19:27:38 IST" finished-at="2020-04-09T19:27:55 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="modifyDetailsMethod" duration-ms="46397" started-at="2020-04-09T19:27:55 IST" data-provider="getVisaDetails" finished-at="2020-04-09T19:28:41 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TE2404201930]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[362019000194]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[009742011111]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[sponsor19@sponsor.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[applicant19@applicant.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[009102011111]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: phone (tried for 20 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at base.BaseClass.locateElement(BaseClass.java:262)
-at pages.ModifyPrimaryContactPage.enterSponsorMobileNumber(ModifyPrimaryContactPage.java:62)
-at testcases.TC_006_ModifyDetails.modifyDetailsMethod(TC_006_ModifyDetails.java:37)
-at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#phone"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64421}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7f4996cb41d465c576b2358f7ec85798
-*** Element info: {Using=id, value=phone}
-at sun.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="closeBrowser" is-config="true" duration-ms="4676" started-at="2020-04-09T19:28:41 IST" finished-at="2020-04-09T19:28:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="tearDownClass" is-config="true" duration-ms="420" started-at="2020-04-09T19:28:46 IST" finished-at="2020-04-09T19:28:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopReport()[pri:0, instance:testcases.TC_006_ModifyDetails@36b4cef0]" name="stopReport" is-config="true" duration-ms="3683" started-at="2020-04-09T19:28:47 IST" finished-at="2020-04-09T19:28:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopReport -->
       </class> <!-- testcases.TC_006_ModifyDetails -->
-    </test> <!-- Modify -->
+    </test> <!-- NormalAppointmentFlow -->
   </suite> <!-- QVC -->
 </testng-results>

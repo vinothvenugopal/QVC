@@ -34,11 +34,40 @@ public class AddWaitListPage extends BaseClass {
 		pickWaitListDate(date);
 		return this;
 	}
-	public ManageAppointmentPage clickSubmitButton()
+	public ManageAppointmentPage clickSubmitButton() throws InterruptedException
 	{
 		WebElement ele = locateElement("xpath", "//button[text()='Submit']");
 		click(ele);
+		
+		boolean checkNotification = checkNotification("xpath", "//div[@class='modal-content']");
+		if (checkNotification==true)
+		{
+			WebElement notificationTextele = locateElement("xpath", "//div[@class='modal-content']//modal-content");
+			String fetchedText = fetchText(notificationTextele);
+			System.out.println("Notification: "+fetchedText+" is displayed. Could not proceed further with waitlisting");
+			reportStep(fetchedText, "fail");
+			WebElement ele1 = locateElement("xpath", "(//div[@class='modal-content']//button)[2]");
+			click(ele1);
+			return null;
+			//throw new RuntimeException();
+		}
+		else
 		return new ManageAppointmentPage(driver, node, test);
 	}
-
+	
+	/*
+	 * public ManageAppointmentPage checkNotification() throws InterruptedException
+	 * {
+	 * 
+	 * boolean checkNotification = checkNotification("xpath",
+	 * "//div[@class='modal-content']"); if (checkNotification==true) { WebElement
+	 * notificationTextele = locateElement("xpath",
+	 * "//div[@class='modal-content']//modal-content"); String fetchedText =
+	 * fetchText(notificationTextele); System.out.println("Notification: "
+	 * +fetchedText+" is displayed. Could not proceed further with waitlisting");
+	 * WebElement ele = locateElement("xpath",
+	 * "(//div[@class='modal-content']//button)[2]"); click(ele);
+	 * reportStep(fetchedText, "fail"); throw new RuntimeException(); } else return
+	 * new ManageAppointmentPage(driver, node, test); }
+	 */
 }

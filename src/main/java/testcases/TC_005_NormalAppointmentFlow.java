@@ -21,19 +21,20 @@ public class TC_005_NormalAppointmentFlow extends ProjectSpecificMethods {
 		nodes = "QVC";
 		authors = "Vinoth";
 		category = "Smoke";
+//		node = test.createNode(testCaseName);
 		workbookName = "BookAppointmentData.xlsx";
 		worksheetName = "India";
 	}
 
 	@Test(dataProvider = "getVisaDetails")
-	public void normalAppointmentFlow(String passportNumber, String visaNumber,String sponsorPhNo, String sponsorEmail, String emailID, String phoneNumber, String category, String center, String date, String timeSlot) throws InterruptedException
+	public void normalAppointmentFlow(String lang, String Ctry, String passportNumber, String visaNumber,String sponsorPhNo, String sponsorEmail, String emailID, String phoneNumber, String category, String center, String date, String timeSlot) throws InterruptedException
 	{
 		new LandingPage(driver,node,test)
 		.checkLandingNotification()
 		.clickLanguageDropDown()
-		.clickLanguage()
+		.clickLanguage(lang)
 		.clickCountryDropDown()
-		.clickCountry()
+		.clickCountry(Ctry)
 		.clickBookAppointment()
 		.enterPassportNumber(passportNumber)
 		.enterVisaNumber(visaNumber)
