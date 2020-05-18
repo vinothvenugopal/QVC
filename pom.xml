@@ -64,10 +64,6 @@
 					<configuration>
 						<suiteXmlFiles> 
 							<suiteXmlFile>TC_005_NormalAppointmentFlow.xml</suiteXmlFile>
-							<suiteXmlFile>TC_006_ModifyDetails.xml</suiteXmlFile>
-							<suiteXmlFile>TC_007_Reschedule.xml</suiteXmlFile>
-							<suiteXmlFile>TC_008_WaitList.xml</suiteXmlFile>
-							<suiteXmlFile>TC_009_RePrint.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
