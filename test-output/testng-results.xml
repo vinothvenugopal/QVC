@@ -1,132 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="8" total="13" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="QVC" duration-ms="256489" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T20:00:26 IST">
+  <suite name="QVC" duration-ms="69287" started-at="2020-05-18T21:42:06 IST" finished-at="2020-05-18T21:43:16 IST">
     <groups>
     </groups>
-    <test name="NormalAppointmentFlow" duration-ms="256489" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T20:00:26 IST">
-      <class name="testcases.TC_008_WaitList">
-        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="setExcelValue" is-config="true" duration-ms="1" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExcelValue -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="report" is-config="true" duration-ms="0" started-at="2020-04-16T19:59:00 IST" finished-at="2020-04-16T19:59:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="initiateBrowser" is-config="true" duration-ms="12904" started-at="2020-04-16T19:59:00 IST" finished-at="2020-04-16T19:59:13 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="waitListMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="waitListMethod" duration-ms="29271" started-at="2020-04-16T19:59:13 IST" data-provider="getVisaDetails" finished-at="2020-04-16T19:59:42 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[English]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sri Lanka]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[AAA12345AA]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[032018000116]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[17 April]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- waitListMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_008_WaitList@51e2adc7]" name="closeBrowser" is-config="true" duration-ms="4152" started-at="2020-04-16T19:59:42 IST" finished-at="2020-04-16T19:59:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.TC_008_WaitList -->
-      <class name="testcases.TC_009_RePrint">
-        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="setExcelValue" is-config="true" duration-ms="1" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExcelValue -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="report" is-config="true" duration-ms="1" started-at="2020-04-16T19:59:46 IST" finished-at="2020-04-16T19:59:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="initiateBrowser" is-config="true" duration-ms="13122" started-at="2020-04-16T19:59:46 IST" finished-at="2020-04-16T19:59:59 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="reprintMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="reprintMethod" duration-ms="22263" started-at="2020-04-16T19:59:59 IST" data-provider="getVisaDetails" finished-at="2020-04-16T20:00:22 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[English]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sri Lanka]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[AAA12345AA]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[032018000116]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reprintMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_009_RePrint@1a8a8f7c]" name="closeBrowser" is-config="true" duration-ms="4135" started-at="2020-04-16T20:00:22 IST" finished-at="2020-04-16T20:00:26 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.TC_009_RePrint -->
+    <test name="NormalAppointmentFlow" duration-ms="69287" started-at="2020-05-18T21:42:06 IST" finished-at="2020-05-18T21:43:16 IST">
       <class name="testcases.TC_005_NormalAppointmentFlow">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="startReport" is-config="true" duration-ms="222" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@80503]" name="startReport" is-config="true" duration-ms="1108" started-at="2020-05-18T21:42:05 IST" finished-at="2020-05-18T21:42:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="setExcelValues" is-config="true" duration-ms="1" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
+        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@80503]" name="setExcelValues" is-config="true" duration-ms="1" started-at="2020-05-18T21:42:06 IST" finished-at="2020-05-18T21:42:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExcelValues -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="report" is-config="true" duration-ms="25" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
+        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@80503]" name="report" is-config="true" duration-ms="19" started-at="2020-05-18T21:42:07 IST" finished-at="2020-05-18T21:42:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="initiateBrowser" is-config="true" duration-ms="20475" started-at="2020-04-16T19:56:11 IST" finished-at="2020-04-16T19:56:31 IST">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@80503]" name="initiateBrowser" is-config="true" duration-ms="21412" started-at="2020-05-18T21:42:08 IST" finished-at="2020-05-18T21:42:29 IST">
           <params>
             <param index="0">
               <value>
@@ -137,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="normalAppointmentFlow(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="normalAppointmentFlow" duration-ms="25512" started-at="2020-04-16T19:56:31 IST" data-provider="getVisaDetails" finished-at="2020-04-16T19:56:57 IST">
+        <test-method status="FAIL" signature="normalAppointmentFlow(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@80503]" name="normalAppointmentFlow" duration-ms="42162" started-at="2020-05-18T21:42:29 IST" data-provider="getVisaDetails" finished-at="2020-05-18T21:43:12 IST">
           <params>
             <param index="0">
               <value>
@@ -151,12 +44,12 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[AAA12345AA]]>
+                <![CDATA[WERWE55345]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[032018000116]]>
+                <![CDATA[022019000041]]>
               </value>
             </param>
             <param index="4">
@@ -200,11 +93,17 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.RuntimeException">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='dropdown-menu']//a[text()='English'] (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at pages.ApplicantDetailsPage.clickSubmit(ApplicantDetailsPage.java:73)
-at testcases.TC_005_NormalAppointmentFlow.normalAppointmentFlow(TC_005_NormalAppointmentFlow.java:42)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='dropdown-menu']//a[text()='English'] (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at base.BaseClass.locateElement(BaseClass.java:325)
+at pages.LandingPage.clickLanguage(LandingPage.java:44)
+at testcases.TC_005_NormalAppointmentFlow.normalAppointmentFlow(TC_005_NormalAppointmentFlow.java:35)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -233,158 +132,47 @@ at org.testng.TestNG.run(TestNG.java:1000)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='dropdown-menu']//a[text()='English']"}
+  (Session info: chrome=81.0.4044.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: db66f54aa4c6f4039618e3fdfd490b99
+*** Element info: {Using=xpath, value=//ul[@class='dropdown-menu']//a[text()='English']}
+at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- normalAppointmentFlow -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="closeBrowser" is-config="true" duration-ms="4169" started-at="2020-04-16T19:56:57 IST" finished-at="2020-04-16T19:57:01 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@80503]" name="closeBrowser" is-config="true" duration-ms="4127" started-at="2020-05-18T21:43:12 IST" finished-at="2020-05-18T21:43:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="stopReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@307f6b8c]" name="stopReport" is-config="true" duration-ms="2340" started-at="2020-04-16T20:00:26 IST" finished-at="2020-04-16T20:00:28 IST">
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:testcases.TC_005_NormalAppointmentFlow@80503]" name="stopReport" is-config="true" duration-ms="519" started-at="2020-05-18T21:43:16 IST" finished-at="2020-05-18T21:43:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopReport -->
       </class> <!-- testcases.TC_005_NormalAppointmentFlow -->
-      <class name="testcases.TC_007_Reschedule">
-        <test-method status="PASS" signature="setExcelValue()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="setExcelValue" is-config="true" duration-ms="1" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExcelValue -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="report" is-config="true" duration-ms="0" started-at="2020-04-16T19:58:04 IST" finished-at="2020-04-16T19:58:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="initiateBrowser" is-config="true" duration-ms="18970" started-at="2020-04-16T19:58:04 IST" finished-at="2020-04-16T19:58:23 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="rescheduleMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="rescheduleMethod" duration-ms="35869" started-at="2020-04-16T19:58:23 IST" data-provider="getVisaDetails" finished-at="2020-04-16T19:58:59 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[English]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sri Lanka]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[AAA12345AA]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[032018000116]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Colombo]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[20 April]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[16:15]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rescheduleMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_007_Reschedule@6f195bc3]" name="closeBrowser" is-config="true" duration-ms="571" started-at="2020-04-16T19:58:59 IST" finished-at="2020-04-16T19:59:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.TC_007_Reschedule -->
-      <class name="testcases.TC_006_ModifyDetails">
-        <test-method status="PASS" signature="setExcelValues()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="setExcelValues" is-config="true" duration-ms="0" started-at="2020-04-16T19:56:09 IST" finished-at="2020-04-16T19:56:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExcelValues -->
-        <test-method status="PASS" signature="report()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="report" is-config="true" duration-ms="1" started-at="2020-04-16T19:57:01 IST" finished-at="2020-04-16T19:57:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- report -->
-        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="initiateBrowser" is-config="true" duration-ms="27696" started-at="2020-04-16T19:57:02 IST" finished-at="2020-04-16T19:57:29 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://beta.qatarvisacenter.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initiateBrowser -->
-        <test-method status="PASS" signature="modifyDetailsMethod(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="modifyDetailsMethod" duration-ms="30688" started-at="2020-04-16T19:57:29 IST" data-provider="getVisaDetails" finished-at="2020-04-16T19:58:00 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[English]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sri Lanka]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[AAA12345AA]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[032018000116]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[009741111111]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[spns@gmail.com]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[apllcnt@gmail.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[009465689865659]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyDetailsMethod -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC_006_ModifyDetails@7a187f14]" name="closeBrowser" is-config="true" duration-ms="4147" started-at="2020-04-16T19:58:00 IST" finished-at="2020-04-16T19:58:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.TC_006_ModifyDetails -->
     </test> <!-- NormalAppointmentFlow -->
   </suite> <!-- QVC -->
 </testng-results>

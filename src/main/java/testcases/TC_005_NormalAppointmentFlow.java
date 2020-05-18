@@ -29,7 +29,7 @@ public class TC_005_NormalAppointmentFlow extends ProjectSpecificMethods {
 	@Test(dataProvider = "getVisaDetails")
 	public void normalAppointmentFlow(String lang, String Ctry, String passportNumber, String visaNumber,String sponsorPhNo, String sponsorEmail, String emailID, String phoneNumber, String category, String center, String date, String timeSlot) throws InterruptedException
 	{
-		new LandingPage(driver,node,test)
+		new LandingPage(node,test)
 		.checkLandingNotification()
 		.clickLanguageDropDown()
 		.clickLanguage(lang)

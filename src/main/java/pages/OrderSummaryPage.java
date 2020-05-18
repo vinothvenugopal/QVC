@@ -9,8 +9,7 @@ import base.BaseClass;
 
 public class OrderSummaryPage extends BaseClass {
 
-	public OrderSummaryPage(RemoteWebDriver driver,ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public OrderSummaryPage(ExtentTest node, ExtentTest test) {
 		this.node = node;
 		this.test = test;
 	}
@@ -68,6 +67,6 @@ public class OrderSummaryPage extends BaseClass {
 		WebElement ele = locateElement("xpath", "//button[text()='Confirm']");
 		//WebElement ele = driver.findElementByXPath("//button[text()='Confirm']");
 		click(ele);
-		return new AppointmentDetailsPage(driver,node,test);
+		return new AppointmentDetailsPage(node,test);
 	}
 }

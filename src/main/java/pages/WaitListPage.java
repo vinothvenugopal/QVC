@@ -9,8 +9,7 @@ import base.BaseClass;
 
 public class WaitListPage extends BaseClass {
 
-	public WaitListPage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public WaitListPage(ExtentTest node, ExtentTest test) {
 		this.node = node;
 		this.test = test;
 	}
@@ -61,7 +60,7 @@ public class WaitListPage extends BaseClass {
 		}
 		else
 			reportStep("Submit button clicked successfully", "pass");
-		return new AddWaitListPage(driver, node, test);
+		return new AddWaitListPage(node, test);
 	}
 	
 	

@@ -22,7 +22,7 @@ public class TC_006_ModifyDetails extends ProjectSpecificMethods {
 	@Test(dataProvider = "getVisaDetails")
 	public void modifyDetailsMethod(String lang, String ctry, String passPortNumber, String visaNumber, String sponsorPhNumber, String sponsorEmailID,String applicantEmailId,String applicantPhNo) throws InterruptedException
 	{
-		new LandingPage(driver,node,test)
+		new LandingPage(node,test)
 		.checkLandingNotification()
 		.clickLanguageDropDown()
 		.clickLanguage(lang)

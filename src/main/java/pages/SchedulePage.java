@@ -14,8 +14,7 @@ import base.BaseClass;
 
 public class SchedulePage extends BaseClass {
 
-	public SchedulePage(RemoteWebDriver driver,ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public SchedulePage(ExtentTest node, ExtentTest test) {
 		this.node = node;
 		this.test = test;
 	}
@@ -66,6 +65,6 @@ public class SchedulePage extends BaseClass {
 		WebElement ele = locateElement("xpath", "//button[text()='Next']");
 	//	WebElement ele = driver.findElementByXPath("//button[text()='Next']");
 		click(ele);
-		return new OrderSummaryPage(driver,node,test);
+		return new OrderSummaryPage(node,test);
 	}
 }

@@ -27,15 +27,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.Reporter;
 
 public class BaseClass extends Reporter {
-	public RemoteWebDriver driver;
-	public WebDriverWait wait;
-	
+	//	public RemoteWebDriver driver;
+	//	public WebDriverWait wait;
+
 	// click action
 	public void click(WebElement ele)
 	{	
 		try {
-			wait = new WebDriverWait(driver, 30);
-			wait.until(ExpectedConditions.elementToBeClickable(ele));
+			setWait();
+			getWait().until(ExpectedConditions.elementToBeClickable(ele));
 			ele.click();
 			reportStep("Button "+ele+" clicked successfully", "pass");
 		} catch (Exception e) {
@@ -46,41 +46,41 @@ public class BaseClass extends Reporter {
 	}
 
 	//to open browser, maximize and Pass URL
-	public RemoteWebDriver startApp(String browserName, String URL)
+	public void startApp(String browserName, String URL)
 	{
 		try {
 			if (browserName.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-				driver = new ChromeDriver();
+				System.setProperty("webdriver.chrome.silentOutput", "true");
+				setDriver("chrome");
 			} else if (browserName.equalsIgnoreCase("ie")) {
 				System.setProperty("webdriver.ie.driver", "./drivers/InternetExplorerDriver.exe");
-				driver = new InternetExplorerDriver();
+				setDriver("internet explorer");
 			} else if (browserName.equalsIgnoreCase("firefox")) {
 				System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver_64 bit.exe");
-				driver = new InternetExplorerDriver();
+				setDriver("firefox");
 			} 
-			driver.manage().window().maximize();
-			driver.get(URL);
-		//	reportStep("Browser launched successfully", "pass");
+			getDriver().manage().window().maximize();
+			getDriver().get(URL);
+			//	reportStep("Browser launched successfully", "pass");
 
 		} catch (Exception e) {
 			System.out.println("Issue in launching browser");
 			reportStep("Could not launch Browser", "fail");
 
 		}
-		return driver;
 	}
 
 	//to close browser
 	public void closeApp()
 	{
-		driver.close();
+		getDriver().close();
 	}
 
 	//page title verification
 	public void verifyPageTitle(String pageTitle)
 	{
-		if((driver.getTitle()).equals(pageTitle))
+		if((getDriver().getTitle()).equals(pageTitle))
 		{
 			System.out.println("Page title verified successfully");
 			reportStep("Page title verified successfully", "pass");
@@ -94,8 +94,8 @@ public class BaseClass extends Reporter {
 	public void clearAndEnter(WebElement ele, String text)
 	{
 		try {
-			wait = new WebDriverWait(driver, 30);
-			wait.until(ExpectedConditions.elementToBeClickable(ele));
+			setWait();
+			getWait().until(ExpectedConditions.elementToBeClickable(ele));
 			ele.clear();
 			ele.sendKeys(text);
 			reportStep("Text entered successfully", "pass");
@@ -116,37 +116,36 @@ public class BaseClass extends Reporter {
 			//finding the index of the array for the month specified in excel sheet
 			String monthFromExcel = date.substring(3, (date.length()));
 			int dateFromExcel = Integer.parseInt(date.substring(0, 2));
-			List<WebElement> calendarDateList = driver
+			List<WebElement> calendarDateList = getDriver()
 					.findElementsByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
 			int indexOfExcelMonth = Arrays.asList(month).indexOf(monthFromExcel);
 			//getting the month name displayed in the UI date picker
-			String pickerMonth = driver.findElementByXPath("//div[@class='navigation__title']//span[1]")
+			String pickerMonth = getDriver().findElementByXPath("//div[@class='navigation__title']//span[1]")
 					.getText();
 			//finding the index of the array for the month displayed in the UI
 			int indexOfUIMonth = Arrays.asList(month).indexOf(pickerMonth);
 			//if month in the UI is less than the month mentioned in the Excel - click next month button
 			if (indexOfUIMonth < indexOfExcelMonth) {
 				int difference = indexOfExcelMonth - indexOfUIMonth;
-				WebElement ele = driver.findElementByXPath("//button[@class='navigation__button is-next']");
+				WebElement ele = getDriver().findElementByXPath("//button[@class='navigation__button is-next']");
 				for (int i = 0; i < difference; i++) {
-					wait = new WebDriverWait(driver, 30);
-					wait.until(ExpectedConditions.elementToBeClickable(ele));
+					setWait();
+					getWait().until(ExpectedConditions.elementToBeClickable(ele));
 					click(ele);
 				}
 				Thread.sleep(1000);
 				if(calendarDateList.size()>1)
 				{
-					eleDate = driver
+					eleDate = getDriver()
 							.findElementByXPath("(//button[text()[normalize-space()='" + dateFromExcel + "']])[2]");
 				}
 				else
 				{
-					eleDate = driver
+					eleDate = getDriver()
 							.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
 				}
-				
-				wait = new WebDriverWait(driver, 30);
-				wait.until(ExpectedConditions.elementToBeClickable(eleDate));
+				setWait();
+				getWait().until(ExpectedConditions.elementToBeClickable(eleDate));
 				if(eleDate.isEnabled()==true)
 				{
 					eleDate.click();
@@ -161,25 +160,25 @@ public class BaseClass extends Reporter {
 			//if month in the UI is greater than the month mentioned in the Excel - click previous month button
 			else if (indexOfUIMonth > indexOfExcelMonth) {
 				int difference = indexOfUIMonth - indexOfExcelMonth;
-				WebElement ele = driver.findElementByXPath("//button[@class='navigation__button is-previous']");
+				WebElement ele = getDriver().findElementByXPath("//button[@class='navigation__button is-previous']");
 				for (int i = 0; i < difference; i++) {
-					wait = new WebDriverWait(driver, 30);
-					wait.until(ExpectedConditions.elementToBeClickable(ele));
+					setWait();
+					getWait().until(ExpectedConditions.elementToBeClickable(ele));
 					click(ele);
 				}
 				Thread.sleep(1000);
 				if(calendarDateList.size()>1)
 				{
-					eleDate = driver
+					eleDate = getDriver()
 							.findElementByXPath("(//button[text()[normalize-space()='" + dateFromExcel + "']])[2]");
 				}
 				else
 				{
-					eleDate = driver
+					eleDate = getDriver()
 							.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
 				}
-				wait = new WebDriverWait(driver, 30);
-				wait.until(ExpectedConditions.elementToBeClickable(eleDate));
+				setWait();
+				getWait().until(ExpectedConditions.elementToBeClickable(eleDate));
 				if(eleDate.isEnabled() == true)
 				{
 					eleDate.click();
@@ -196,16 +195,17 @@ public class BaseClass extends Reporter {
 				Thread.sleep(1000);
 				if(calendarDateList.size()>1)
 				{
-					eleDate = driver
+
+					eleDate = getDriver()
 							.findElementByXPath("(//button[text()[normalize-space()='" + dateFromExcel + "']])[2]");
 				}
 				else
 				{
-					eleDate = driver
+					eleDate = getDriver()
 							.findElementByXPath("//button[text()[normalize-space()='" + dateFromExcel + "']]");
 				}
-				wait = new WebDriverWait(driver, 30);
-				wait.until(ExpectedConditions.elementToBeClickable(eleDate));
+				setWait();
+				getWait().until(ExpectedConditions.elementToBeClickable(eleDate));
 				if(eleDate.isEnabled() == true)
 				{
 					eleDate.click();
@@ -263,7 +263,7 @@ public class BaseClass extends Reporter {
 	public void scrollToElement()
 	{
 		try {
-			Actions action = new Actions(driver);
+			Actions action = new Actions(getDriver());
 			action.sendKeys(Keys.PAGE_DOWN).build().perform();
 			reportStep("page scrolled successfully", "pass");
 		} catch (Exception e) {
@@ -272,15 +272,15 @@ public class BaseClass extends Reporter {
 		}
 	}
 	//to check if there are any notifications
-	
+
 	//to check if there are any notifications
 
-	 public boolean checkNotification(String locator, String property) throws InterruptedException 
-	 {
-		 Thread.sleep(2000);
-		 boolean isNotificationPresent = driver.findElementsByXPath(property).size()>0;
-		 return isNotificationPresent;
-	 }
+	public boolean checkNotification(String locator, String property) throws InterruptedException 
+	{
+		Thread.sleep(2000);
+		boolean isNotificationPresent = getDriver().findElementsByXPath(property).size()>0;
+		return isNotificationPresent;
+	}
 
 	//to find an element
 	public WebElement locateElement(String locator, String property)
@@ -288,44 +288,44 @@ public class BaseClass extends Reporter {
 		try {
 			switch (locator.toLowerCase()) {
 			case "id":
-				wait = new WebDriverWait(driver, 20);
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(property)));
-				if(driver.findElementById(property).isDisplayed()==true)
+				setWait();
+				getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id(property)));
+				if(getDriver().findElementById(property).isDisplayed()==true)
 				{
-				return driver.findElementById(property);
+					return getDriver().findElementById(property);
 				}
 				else
 					return null;
 			case "name":
-				wait = new WebDriverWait(driver, 20);
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(property)));
-				if(driver.findElementByName(property).isDisplayed()==true)
+				setWait();
+				getWait().until(ExpectedConditions.visibilityOfElementLocated(By.name(property)));
+				if(getDriver().findElementByName(property).isDisplayed()==true)
 				{
-				return driver.findElementByName(property);
+					return getDriver().findElementByName(property);
 				}
 				else return null;
 			case "class":
-				wait = new WebDriverWait(driver, 20);
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(property)));
-				if(driver.findElementByClassName(property).isDisplayed()==true)
+				setWait();
+				getWait().until(ExpectedConditions.visibilityOfElementLocated(By.className(property)));
+				if(getDriver().findElementByClassName(property).isDisplayed()==true)
 				{
-				return driver.findElementByClassName(property);
+					return getDriver().findElementByClassName(property);
 				}
 				else return null;
 			case "link":
-				wait = new WebDriverWait(driver, 20);
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(property)));
-				if(driver.findElementByLinkText(property).isDisplayed()==true)
+				setWait();
+				getWait().until(ExpectedConditions.visibilityOfElementLocated(By.linkText(property)));
+				if(getDriver().findElementByLinkText(property).isDisplayed()==true)
 				{
-				return driver.findElementByLinkText(property);
+					return getDriver().findElementByLinkText(property);
 				}
 				else return null;
 			case "xpath":
-				wait = new WebDriverWait(driver, 20);
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(property)));
-				if(driver.findElementByXPath(property).isDisplayed()==true)
+				setWait();
+				getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath(property)));
+				if(getDriver().findElementByXPath(property).isDisplayed()==true)
 				{
-				return driver.findElementByXPath(property);
+					return getDriver().findElementByXPath(property);
 				}
 				else return null;
 			}
@@ -337,14 +337,14 @@ public class BaseClass extends Reporter {
 	// to get pagetitle
 	public String fetchPageTitle()
 	{
-		return driver.getTitle();
+		return getDriver().getTitle();
 	}
 
 	@Override
 	public long takeSnap() {
 		long number = (long) Math.floor(Math.random() * 900000000L) + 10000000L; 
 		try {
-			FileUtils.copyFile(driver.getScreenshotAs(OutputType.FILE) , new File("./reports/images/"+number+".jpg"));
+			FileUtils.copyFile(getDriver().getScreenshotAs(OutputType.FILE) , new File("./reports/images/"+number+".jpg"));
 		} catch (WebDriverException e) {
 			System.out.println("The browser has been closed.");
 		} catch (IOException e) {
@@ -352,15 +352,15 @@ public class BaseClass extends Reporter {
 		}
 		return number;		
 	}
-	
+
 	public String fetchText(WebElement ele)
 	{
-		wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(ele));
+		setWait();
+		getWait().until(ExpectedConditions.elementToBeClickable(ele));
 		String elementText = ele.getText();
 		return elementText;
 	}
-	
+
 	//selecting month and date using the date mentioned in the data excel
 	public void pickWaitListDate(String date) throws ElementNotInteractableException
 	{
@@ -375,22 +375,22 @@ public class BaseClass extends Reporter {
 			int dateFromExcel = Integer.parseInt(date.substring(0, 2));
 			int indexOfExcelMonth = Arrays.asList(month).indexOf(monthFromExcel);
 			//getting the month name displayed in the UI date picker
-			String pickerMonth = driver.findElementByXPath("//div[@class='headermonthtxt']").getText();
+			String pickerMonth = getDriver().findElementByXPath("//div[@class='headermonthtxt']").getText();
 			//finding the index of the array for the month displayed in the UI
 			int indexOfUIMonth = Arrays.asList(month).indexOf(pickerMonth);
 			//if month in the UI is less than the month mentioned in the Excel - click next month button
 			if (indexOfUIMonth < indexOfExcelMonth) {
-				
+
 				System.out.println("Wait List can be scheduled only for the month "+pickerMonth+" Date requested falls on "+monthFromExcel+" month.");
 				throw new Exception("Test case failed");
 				/*
 				 * int difference = indexOfExcelMonth - indexOfUIMonth; WebElement ele =
-				 * driver.findElementByXPath("(//div[@class='headerbtncell'])[2]"); for (int i =
-				 * 0; i < difference; i++) { wait = new WebDriverWait(driver, 30);
+				 * getDriver().findElementByXPath("(//div[@class='headerbtncell'])[2]"); for (int i =
+				 * 0; i < difference; i++) { 
 				 * wait.until(ExpectedConditions.elementToBeClickable(ele)); click(ele); }
 				 * Thread.sleep(1000); WebElement eleDate = driver
 				 * .findElementByXPath("//td[@class='daycell currmonth tablesingleday']//span[text()='"
-				 * + dateFromExcel + "']]"); wait = new WebDriverWait(driver, 30);
+				 * + dateFromExcel + "']]"); 
 				 * wait.until(ExpectedConditions.elementToBeClickable(eleDate));
 				 * if(eleDate.isEnabled()==true) { eleDate.click();
 				 * System.out.println("Date Selected successfully");
@@ -401,17 +401,17 @@ public class BaseClass extends Reporter {
 			} 
 			//if month in the UI is greater than the month mentioned in the Excel - click previous month button
 			else if (indexOfUIMonth > indexOfExcelMonth) {
-				
+
 				System.out.println("Wait List can be scheduled only for the month "+pickerMonth+" Date requested falls on "+monthFromExcel+" month.");
 				throw new Exception("Test Case Failed");
 				/*
 				 * int difference = indexOfUIMonth - indexOfExcelMonth; WebElement ele =
-				 * driver.findElementByXPath("(//div[@class='headerbtncell'])[1]"); for (int i =
-				 * 0; i < difference; i++) { wait = new WebDriverWait(driver, 30);
+				 * getDriver().findElementByXPath("(//div[@class='headerbtncell'])[1]"); for (int i =
+				 * 0; i < difference; i++) { 
 				 * wait.until(ExpectedConditions.elementToBeClickable(ele)); click(ele); }
 				 * Thread.sleep(1000); WebElement eleDate = driver
 				 * .findElementByXPath("//td[@class='daycell currmonth tablesingleday']//span[text()='"
-				 * + dateFromExcel + "']]"); wait = new WebDriverWait(driver, 30);
+				 * + dateFromExcel + "']]"); 
 				 * wait.until(ExpectedConditions.elementToBeClickable(eleDate));
 				 * if(eleDate.isEnabled() == true) { eleDate.click();
 				 * System.out.println("Date Selected successfully");
@@ -424,10 +424,10 @@ public class BaseClass extends Reporter {
 			else if (indexOfUIMonth == indexOfExcelMonth) {
 				Thread.sleep(1000);
 				String xpth = "//table[@class='caltable']//tr//span[text()='" + dateFromExcel + "']";
-				
+
 				//getting the background color of the particular date to check if the date is enabled or disabled
-				String dateBGCssValue = driver.findElementByXPath("//*[text()='"+dateFromExcel+"']/ancestor::td").getCssValue("background-color");
-				WebElement eleDate = driver.findElementByXPath("//table[@class='caltable']//tr//span[text()='" + dateFromExcel + "']");
+				String dateBGCssValue = getDriver().findElementByXPath("//*[text()='"+dateFromExcel+"']/ancestor::td").getCssValue("background-color");
+				WebElement eleDate = getDriver().findElementByXPath("//table[@class='caltable']//tr//span[text()='" + dateFromExcel + "']");
 				/*
 				 * Actions action = new Actions(driver);
 				 * action.moveToElement(eleDate).build().perform();
@@ -438,11 +438,11 @@ public class BaseClass extends Reporter {
 				 */
 
 				/*System.out.println(bgColor);
-				String enabledColor = driver.findElementByXPath("//table[@class='caltable']//tr//span[text()='14']").getCssValue("color");
+				String enabledColor = getDriver().findElementByXPath("//table[@class='caltable']//tr//span[text()='14']").getCssValue("color");
 				System.out.println(enabledColor);*/
-				
-				  wait = new WebDriverWait(driver, 30);
-				  wait.until(ExpectedConditions.elementToBeClickable(eleDate)); 
+
+				setWait();
+				getWait().until(ExpectedConditions.elementToBeClickable(eleDate)); 
 
 				if(dateBGCssValue.equals("rgba(0, 0, 0, 0)"))
 				{
@@ -460,16 +460,16 @@ public class BaseClass extends Reporter {
 		} catch (ElementNotSelectableException e) {
 			System.out.println("Given date is not enabled to be selected. Choose a different date");
 		}
-		
-		  catch(NoSuchElementException e) { 
-			  System.out.println("Element not present");
-		  }
-		 
+
+		catch(NoSuchElementException e) { 
+			System.out.println("Element not present");
+		}
+
 		catch (Exception e) {
 			System.out.println("Could not select the particular date");
 			reportStep("Requested date could not be selected", "fail");
 		}
-		
+
 	}
 }
 

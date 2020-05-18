@@ -14,9 +14,10 @@ import com.aventstack.extentreports.MediaEntityModelProvider;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ExtentHtmlReporterConfiguration;
 
+import base.DriverInstance;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-public abstract class Reporter {
+public abstract class Reporter extends DriverInstance {
 	
 	public  ExtentHtmlReporter reporter;
 	public static ExtentReports extent;

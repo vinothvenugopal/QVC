@@ -8,8 +8,7 @@ import com.aventstack.extentreports.ExtentTest;
 import base.BaseClass;
 
 public class ModifyPrimaryContactPage extends BaseClass{
-	public ModifyPrimaryContactPage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public ModifyPrimaryContactPage(ExtentTest node, ExtentTest test) {
 		this.node = node;
 		this.test = test;
 	}
@@ -104,6 +103,6 @@ public class ModifyPrimaryContactPage extends BaseClass{
 			System.out.println("Could not update the modifications");
 		}
 		click(ele1);
-		return new ManageAppointmentPage(driver,node,test);
+		return new ManageAppointmentPage(node,test);
 	}
 }   

@@ -22,7 +22,7 @@ public class TC_009_RePrint extends ProjectSpecificMethods{
 	@Test(dataProvider = "getVisaDetails")
 	public void reprintMethod(String lang, String ctry,String passPortNumber, String visaNumber) throws InterruptedException
 	{
-		new LandingPage(driver,node,test)
+		new LandingPage(node,test)
 		.checkLandingNotification()
 		.clickLanguageDropDown()
 		.clickLanguage(lang)

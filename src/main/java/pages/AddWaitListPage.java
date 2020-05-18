@@ -8,8 +8,8 @@ import com.aventstack.extentreports.ExtentTest;
 import base.BaseClass;
 
 public class AddWaitListPage extends BaseClass {
-	public AddWaitListPage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public AddWaitListPage(ExtentTest node, ExtentTest test) {
+		
 		this.node = node;
 		this.test = test;
 	}
@@ -52,7 +52,7 @@ public class AddWaitListPage extends BaseClass {
 			//throw new RuntimeException();
 		}
 		else
-		return new ManageAppointmentPage(driver, node, test);
+		return new ManageAppointmentPage( node, test);
 	}
 	
 	/*

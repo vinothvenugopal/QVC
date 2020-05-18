@@ -8,8 +8,7 @@ import com.aventstack.extentreports.ExtentTest;
 import base.BaseClass;
 
 public class AppointmentDetailsPage extends BaseClass{
-	public AppointmentDetailsPage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public AppointmentDetailsPage(ExtentTest node, ExtentTest test) {
 		this.node = node;
 		this.test = test;
 		

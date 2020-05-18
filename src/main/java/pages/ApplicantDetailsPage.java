@@ -9,8 +9,7 @@ import com.aventstack.extentreports.ExtentTest;
 import base.BaseClass;
 
 public class ApplicantDetailsPage extends BaseClass {
-	public ApplicantDetailsPage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public ApplicantDetailsPage(ExtentTest node, ExtentTest test) {
 		this.node = node;
 		this.test = test;
 	}
@@ -74,7 +73,7 @@ public class ApplicantDetailsPage extends BaseClass {
 		}
 		else
 			reportStep("Submit button clicked successfully", "pass");
-		return new PrimaryContactPage(driver, node, test);
+		return new PrimaryContactPage(node, test);
 	}
 	
 }

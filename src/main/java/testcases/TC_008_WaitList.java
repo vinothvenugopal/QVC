@@ -22,7 +22,7 @@ public class TC_008_WaitList extends ProjectSpecificMethods{
 	@Test(dataProvider = "getVisaDetails")
 	public void waitListMethod(String lang, String ctry, String passPortNumber, String visaNumber, String waitListDate) throws InterruptedException
 	{
-		new LandingPage(driver, node, test)
+		new LandingPage(node, test)
 		.checkLandingNotification()
 		.clickLanguageDropDown()
 		.clickLanguage(lang)

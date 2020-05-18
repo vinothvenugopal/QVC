@@ -9,8 +9,7 @@ import base.BaseClass;
 
 public class LandingPage extends BaseClass{
 
-	public LandingPage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public LandingPage(ExtentTest node, ExtentTest test) {
 		this.node = node;
 		this.test = test;
 	}
@@ -59,7 +58,7 @@ public class LandingPage extends BaseClass{
 		WebElement ele = locateElement("xpath", "((//ul[@class='dropdown-menu'])[2])//a[text()='"+ctry+"']");
 		//WebElement ele = driver.findElementByXPath("((//ul[@class='dropdown-menu'])[2])//a[text()='India']");
 		click(ele);
-		return new HomePage(driver,node,test);
+		return new HomePage(node,test);
 
 	}
 }

@@ -15,11 +15,10 @@ public class ProjectSpecificMethods extends BaseClass{
 	
 	@Parameters({"url"})
 	@BeforeMethod
-	public RemoteWebDriver initiateBrowser(String url) 
+	public void initiateBrowser(String url) 
 	{
-		driver = startApp("chrome", url);
+		startApp("chrome",url);
 		node = test.createNode(testCaseName);
-		return driver;
 	}
 
 	@AfterMethod

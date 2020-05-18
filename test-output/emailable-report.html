@@ -9,18 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">QVC</th></tr>
-<tr><td><a href="#t0">NormalAppointmentFlow</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">256,489</td><td></td><td></td></tr>
+<tr><td><a href="#t0">NormalAppointmentFlow</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">69,287</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">QVC</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NormalAppointmentFlow &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.TC_005_NormalAppointmentFlow</td><td><a href="#m0">normalAppointmentFlow</a></td><td rowspan="1">1587047191664</td><td rowspan="1">25512</td></tr><tr><th colspan="4">NormalAppointmentFlow &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.TC_006_ModifyDetails</td><td><a href="#m1">modifyDetailsMethod</a></td><td rowspan="1">1587047249836</td><td rowspan="1">30688</td></tr><tr class="passedodd"><td rowspan="1">testcases.TC_007_Reschedule</td><td><a href="#m2">rescheduleMethod</a></td><td rowspan="1">1587047303722</td><td rowspan="1">35869</td></tr><tr class="passedeven"><td rowspan="1">testcases.TC_008_WaitList</td><td><a href="#m3">waitListMethod</a></td><td rowspan="1">1587047353150</td><td rowspan="1">29271</td></tr><tr class="passedodd"><td rowspan="1">testcases.TC_009_RePrint</td><td><a href="#m4">reprintMethod</a></td><td rowspan="1">1587047399778</td><td rowspan="1">22263</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">QVC</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NormalAppointmentFlow &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.TC_005_NormalAppointmentFlow</td><td><a href="#m0">normalAppointmentFlow</a></td><td rowspan="1">1589818349957</td><td rowspan="1">42162</td></tr></tbody>
 </table>
-<h2>NormalAppointmentFlow</h2><h3 id="m0">testcases.TC_005_NormalAppointmentFlow#normalAppointmentFlow</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>English</td><td>Sri Lanka</td><td>AAA12345AA</td><td>032018000116</td><td>009749595424</td><td>Vinoth@yahoo.co.in.com</td><td>vinodhan@gmail.com</td><td>009465689865659</td><td>Normal</td><td>Colombo</td><td>30 April</td><td>10:30</td></tr><tr><th colspan="12">Exception</th></tr><tr><td colspan="12"><div class="stacktrace">java.lang.RuntimeException
-	at pages.ApplicantDetailsPage.clickSubmit(ApplicantDetailsPage.java:73)
-	at testcases.TC_005_NormalAppointmentFlow.normalAppointmentFlow(TC_005_NormalAppointmentFlow.java:42)
+<h2>NormalAppointmentFlow</h2><h3 id="m0">testcases.TC_005_NormalAppointmentFlow#normalAppointmentFlow</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>English</td><td>Sri Lanka</td><td>WERWE55345</td><td>022019000041</td><td>009749595424</td><td>Vinoth@yahoo.co.in.com</td><td>vinodhan@gmail.com</td><td>009465689865659</td><td>Normal</td><td>Colombo</td><td>30 April</td><td>10:30</td></tr><tr><th colspan="12">Exception</th></tr><tr><td colspan="12"><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class=&apos;dropdown-menu&apos;]//a[text()=&apos;English&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at base.BaseClass.locateElement(BaseClass.java:325)
+	at pages.LandingPage.clickLanguage(LandingPage.java:44)
+	at testcases.TC_005_NormalAppointmentFlow.normalAppointmentFlow(TC_005_NormalAppointmentFlow.java:35)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.TC_006_ModifyDetails#modifyDetailsMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>English</td><td>Sri Lanka</td><td>AAA12345AA</td><td>032018000116</td><td>009741111111</td><td>spns@gmail.com</td><td>apllcnt@gmail.com</td><td>009465689865659</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.TC_007_Reschedule#rescheduleMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>English</td><td>Sri Lanka</td><td>AAA12345AA</td><td>032018000116</td><td>Colombo</td><td>20 April</td><td>16:15</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.TC_008_WaitList#waitListMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>English</td><td>Sri Lanka</td><td>AAA12345AA</td><td>032018000116</td><td>17 April</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testcases.TC_009_RePrint#reprintMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>English</td><td>Sri Lanka</td><td>AAA12345AA</td><td>032018000116</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;dropdown-menu&apos;]//a[text()=&apos;English&apos;]&quot;}
+  (Session info: chrome=81.0.4044.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VR&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\vinot\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54538}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: db66f54aa4c6f4039618e3fdfd490b99
+*** Element info: {Using=xpath, value=//ul[@class=&apos;dropdown-menu&apos;]//a[text()=&apos;English&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

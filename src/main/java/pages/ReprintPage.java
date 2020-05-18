@@ -9,8 +9,7 @@ import base.BaseClass;
 
 public class ReprintPage extends BaseClass {
 
-	public ReprintPage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public ReprintPage(ExtentTest node, ExtentTest test) {
 		this.node = node;
 		this.test = test;
 	}
@@ -37,6 +36,6 @@ public class ReprintPage extends BaseClass {
 	{
 		WebElement ele = locateElement("xpath", "//button[text()[normalize-space()='Submit']]");
 		click(ele);
-		return new AppointmentDetailsPage(driver,node,test);
+		return new AppointmentDetailsPage(node,test);
 	}
 }

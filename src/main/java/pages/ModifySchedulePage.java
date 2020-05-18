@@ -9,8 +9,7 @@ import base.BaseClass;
 
 public class ModifySchedulePage extends BaseClass {
 
-	public ModifySchedulePage(RemoteWebDriver driver, ExtentTest node, ExtentTest test) {
-		this.driver = driver;
+	public ModifySchedulePage(ExtentTest node, ExtentTest test) {
 		this.node = node;
 		this.test = test;
 	}
@@ -94,7 +93,7 @@ public class ModifySchedulePage extends BaseClass {
 	{
 		WebElement ele = locateElement("xpath", "//button[text()='Next']");
 		click(ele);
-		return new OrderSummaryPage(driver,node,test);
+		return new OrderSummaryPage(node,test);
 	}
 	
 }
